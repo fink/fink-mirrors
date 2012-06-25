@@ -5,10 +5,12 @@
 # as well as for its geographical location.
 #
 # To use this tool, you need to install the following Fink packages:
-#  * uri-find-pm5100 
-#  * www-mechanize-pm5100
-#  * html-tree-pm5100
-#  * geo-ip-pm5100
+#  * uri-find-pm5100 | uri-find-pm5123 | uri-find-pm5124 
+#  * www-mechanize-pm5100 | www-mechanize-pm5123 www-mechanize-pm5124
+#  * html-tree-pm5100 | html-tree-pm5123 | html-tree-pm5124
+#  * geo-ip-pm5100 | html-tree-pm5123 | html-tree-pm5124
+#       
+#    choosing the appropriate Perl version for your system.
 #
 # TODO: Right now we test all mirrors sequentially, which can take a looong
 #       time. We should try to parallelize this. An easy way for that would
@@ -22,6 +24,12 @@
 #       a single mirmon parser.
 #
 # TODO: PostgreSQL analysis is broken; the website we used to use only lists redirect URLs now.
+# 
+# NOTE: SourceForge does have a mirror list at 
+# http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, 
+# but that's as not easily parseable.  They really want folks to use e.g 
+# http://downloads.sourceforge.net/<project>/<tarball.tar.gz>.  This is set as
+# as our Primary mirror option for the SourceForge mirrors.
 
 $|++;
 
@@ -44,7 +52,9 @@ use vars qw($VERSION %keys %reverse_keys $debug $response);
 
 # map 'site name' to [ proc, URL of mirror list, primary mirror ]
 my %mirror_sites = (
-	'Apache'  => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
+	# FIXME: Apparently one can no longer get Apache mirror info via this script.  Maybe we
+	# need mirmon now.
+#	'Apache'  => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
 	'CPAN'    => [ \&parse_cpan, 'http://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
 	'CTAN'    => [ \&parse_ctan, 'ftp://tug.ctan.org/tex-archive/README.mirrors', 'ftp://tug.ctan.org/tex-archive' ],
 	'Debian' => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
@@ -52,7 +62,8 @@ my %mirror_sites = (
 	'Gimp' => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
 	'GNOME' => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU' => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftp.gnu.org/gnu' ],
-	'KDE' => [ \&parse_kde, 'http://download.kde.org/mirrorstatus.html', 'ftp://ftp.kde.org/pub/kde' ],
+	# TODO: http://download.kde.org/mirrorstatus.html doesn't exist any more.
+#	'KDE' => [ \&parse_kde, 'http://download.kde.org/mirrorstatus.html', 'ftp://ftp.kde.org/pub/kde' ],
 	
 	# FIXME: Format changed, they now only list redirect URls
 #	'PostgreSQL' => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
