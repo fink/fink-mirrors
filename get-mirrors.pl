@@ -26,10 +26,10 @@
 # TODO: PostgreSQL analysis is broken; the website we used to use only lists redirect URLs now.
 # 
 # NOTE: SourceForge does have a mirror list at 
-# http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, 
-# but that's as not easily parseable.  They really want folks to use e.g 
-# http://downloads.sourceforge.net/<project>/<tarball.tar.gz>.  This is set as
-# as our Primary mirror option for the SourceForge mirrors.
+# 		http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, 
+# 		but that's as not easily parseable.  They really want folks to use e.g 
+# 		http://downloads.sourceforge.net/<project>/<tarball.tar.gz>.  This is set as
+# 		as our Primary mirror option for the SourceForge mirrors.
 
 $|++;
 
