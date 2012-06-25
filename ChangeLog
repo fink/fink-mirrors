@@ -1,6 +1,8 @@
 2012-06-24	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
-	* sourceforge: 	Mirror cleanup via 'get-mirrors.pl', copyright update
+	* cpan, ctan, freebsd, gimp, gnome, gnu: mirror updates via 'get-mirrors.pl' 
+	* sourceforge: manually removed bad mirrors
+	* copyright update
 	
 
 2011-10-11	Alexander Hansen  <alexkhansen@users.sourceforge.net>
