@@ -52,9 +52,7 @@ use vars qw($VERSION %keys %reverse_keys $debug $response);
 
 # map 'site name' to [ proc, URL of mirror list, primary mirror ]
 my %mirror_sites = (
-	# FIXME: Apparently one can no longer get Apache mirror info via this script.  Maybe we
-	# need mirmon now.
-#	'Apache'  => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
+	'Apache'  => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
 	'CPAN'    => [ \&parse_cpan, 'http://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
 	'CTAN'    => [ \&parse_ctan, 'ftp://tug.ctan.org/tex-archive/README.mirrors', 'ftp://tug.ctan.org/tex-archive' ],
 	'Debian' => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
@@ -163,7 +161,7 @@ sub parse_apache {
 					my $url = $link->attr('href');
 					$url =~ s#/$##;
 					print "\t", $url, ": ";
-					if (get_content($url . '/DATE') =~ /^\d+$/gs) {
+					if (get_content($url . '/zzz/time.txt') =~ /^\d+$/gs) {
 						print "ok\n";
 						push(@$links, $url);
 					} else {
