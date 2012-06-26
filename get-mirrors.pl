@@ -49,6 +49,7 @@ use URI::Escape;
 use URI::Find;
 
 use vars qw($VERSION %keys %reverse_keys $debug $response);
+use Getopt::Long;
 
 # map 'site name' to [ proc, URL of mirror list, primary mirror ]
 my %mirror_sites = (
@@ -61,7 +62,9 @@ my %mirror_sites = (
 	'GNOME' => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU' => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftp.gnu.org/gnu' ],
 	# FIXME: http://download.kde.org/mirrorstatus.html doesn't exist any more.
-#	'KDE' => [ \&parse_kde, 'http://download.kde.org/mirrorstatus.html', 'ftp://ftp.kde.org/pub/kde' ],
+	# http://files.kde.org/extra/mirrors.html appears to be the new site, but it's not compatible
+	# with the existing parse_kde().
+#	'KDE' => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'ftp://ftp.kde.org/pub/kde' ],
 	# FIXME: Format changed, they now only list redirect URls
 #	'PostgreSQL' => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
 	);
@@ -90,9 +93,38 @@ while (<KEYS>) {
 }
 close (KEYS);
 
-### Iterate over all sites
+### Parse options 
+my @sites_to_check;
+{
+	my ($apache,$cpan,$ctan,$debian,$freebsd,$gimp,$gnome,$gnu,$kde);
+	GetOptions	(	
+				"apache" => 	\$apache,
+				"cpan" => 		\$cpan,
+				"ctan" => 		\$ctan,
+				"debian" => 	\$debian,
+				"freebsd" => 	\$freebsd,
+				"gimp" =>		\$gimp,
+				"gnome" => 		\$gnome,
+				"gnu" =>		\$gnu,
+				"kde" =>		\$kde,
+				);	
+	push @sites_to_check, "Apache" if $apache;
+	push @sites_to_check, "CPAN" if $cpan;
+	push @sites_to_check, "CTAN" if $ctan;
+	push @sites_to_check, "Debian" if $debian;
+	push @sites_to_check, "FreeBSD" if $freebsd;
+	push @sites_to_check, "Gimp" if $gimp;
+	push @sites_to_check, "GNOME" if $gnome;
+	push @sites_to_check, "GNU" if $gnu;
+	push @sites_to_check, "KDE" if $kde;
+	if (scalar @sites_to_check == 0) { # default when no options chosen
+		@sites_to_check = keys %mirror_sites;
+	}
+}
 
-foreach my $mirror_name (sort keys %mirror_sites) {
+### Iterate over selected sites
+
+foreach my $mirror_name (sort @sites_to_check) {
 	my $site = lc $mirror_name;
 	my ($parse_sub, $mirror_list_url, $primary) = @{$mirror_sites{$mirror_name}};
 
