@@ -1,5 +1,5 @@
 # Official mirror list: http://www.debian.org/mirror/list
-Timestamp: 2011-10-25
+Timestamp: 2012-06-25
 
 Primary: ftp://ftp.debian.org/debian
 
@@ -53,3 +53,4 @@ nam-MX: http://ftp.mx.debian.org/debian
 nam-US: http://ftp.us.debian.org/debian
 sam-BR: http://ftp.br.debian.org/debian
 sam-CL: http://ftp.cl.debian.org/debian
+sam-SV: http://ftp.sv.debian.org/debian

@@ -1,8 +1,10 @@
 # Official mirror list: http://www.cpan.org/SITES.html
-Timestamp: 2012-06-24
+Timestamp: 2012-06-25
 
 Primary: ftp://ftp.cpan.org/pub/CPAN
 
+afr-TN: http://cpan.mirror.tn
+afr-UG: http://mirror.ucu.ac.ug/cpan
 afr-ZA: ftp://cpan.mirror.ac.za
 afr-ZA: ftp://ftp.is.co.za/pub/cpan
 afr-ZA: ftp://ftp.saix.net/pub/CPAN
@@ -53,6 +55,10 @@ asi-KR: http://cpan.sarang.net
 asi-KR: http://ftp.kaist.ac.kr/pub/CPAN
 asi-KR: http://ftp.neowiz.com/CPAN
 asi-KR: http://mirror.yongbok.net/CPAN
+asi-KZ: ftp://mirror.neolabs.kz/CPAN
+asi-KZ: ftp://mirror.space.kz/CPAN
+asi-KZ: http://mirror.neolabs.kz/CPAN
+asi-KZ: http://mirror.space.kz/CPAN
 asi-PK: ftp://mirror-cybernet.lums.edu.pk/pub/CPAN
 asi-PK: ftp://stingray.cyber.net.pk/cpan
 asi-PK: http://mirror-cybernet.lums.edu.pk/pub/CPAN
