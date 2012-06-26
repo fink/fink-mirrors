@@ -1,5 +1,5 @@
 # Official mirror list: ftp://tug.ctan.org/tex-archive/README.mirrors
-Timestamp: 2012-06-24
+Timestamp: 2012-06-25
 
 Primary: ftp://tug.ctan.org/tex-archive
 
@@ -28,7 +28,6 @@ asi-JP: http://ftp.yz.yamagata-u.ac.jp/pub/CTAN
 asi-KR: ftp://ftp.kaist.ac.kr/tex-archive
 asi-KR: ftp://ftp.neowiz.com/CTAN
 asi-KR: http://ftp.kaist.ac.kr/pub/tex-archive
-asi-KR: http://ftp.neowiz.com/CTAN
 asi-PK: ftp://mirror-cybernet.lums.edu.pk/pub/ctan
 asi-PK: ftp://stingray.cyber.net.pk/ctan
 asi-PK: http://mirror-cybernet.lums.edu.pk/pub/ctan
@@ -100,9 +99,7 @@ eur-PL: http://piotrkosoft.net/pub/mirrors/CTAN
 eur-PT: ftp://ftp.di.uminho.pt/pub/ctan
 eur-PT: ftp://ftp.eq.uc.pt/pub/software/TeX
 eur-PT: ftp://ftp.ist.utl.pt/pub/ctan
-eur-PT: ftp://mirrors.fe.up.pt/pub/CTAN
 eur-PT: http://ftp.eq.uc.pt/software/TeX
-eur-PT: http://mirrors.fe.up.pt/pub/CTAN
 eur-RO: ftp://ftp.roedu.net/mirrors/ctan.org
 eur-RO: http://ftp.roedu.net/mirrors/ctan.org
 eur-RS: http://rpm.scl.rs/CTAN

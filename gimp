@@ -1,5 +1,5 @@
 # Official mirror list: http://www.gimp.org/downloads
-Timestamp: 2012-06-24
+Timestamp: 2012-06-25
 
 Primary: ftp://ftp.gimp.org/pub/gimp
 
@@ -32,7 +32,6 @@ eur-NL: ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp
 eur-NL: http://ftp.snt.utwente.nl/pub/software/gimp/gimp
 eur-NL: http://mirrors-eu.spyrush.com/gimp/gimp
 eur-PL: ftp://ftp.tpnet.pl/d10/graphics/gimp
-eur-PL: ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp
 eur-PL: ftp://sunsite.icm.edu.pl/pub/graphics/gimp
 eur-PT: ftp://mirrors.dominios.pt/pub/ftp.gimp.org
 eur-PT: http://mirrors.dominios.pt/gimp

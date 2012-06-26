@@ -1,5 +1,5 @@
 # Official mirror list: http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html
-Timestamp: 2012-06-24
+Timestamp: 2012-06-25
 
 Primary: ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/distfiles
 
@@ -116,7 +116,6 @@ eur-SE: http://ftp4.se.freebsd.org/pub/FreeBSD/ports/distfiles
 eur-SE: http://ftp4.se.freebsd.org/pub/FreeBSD/ports/distfiles
 eur-SE: http://ftp5.se.freebsd.org/ports/distfiles
 eur-SI: ftp://ftp.si.freebsd.org/pub/FreeBSD/ports/distfiles
-eur-TR: ftp://ftp2.tr.freebsd.org/pub/FreeBSD/ports/distfiles
 eur-UA: ftp://ftp.ua.freebsd.org/pub/FreeBSD/ports/distfiles
 eur-UA: ftp://ftp11.ua.freebsd.org/pub/FreeBSD/ports/distfiles
 eur-UA: ftp://ftp7.ua.freebsd.org/pub/FreeBSD/ports/distfiles
@@ -141,6 +140,8 @@ nam-US: ftp://ftp1.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp10.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp11.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp11.us.freebsd.org/pub/FreeBSD/ports/distfiles
+nam-US: ftp://ftp13.freebsd.org/pub/FreeBSD/ports/distfiles
+nam-US: ftp://ftp13.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp15.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp2.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: ftp://ftp2.us.freebsd.org/pub/FreeBSD/ports/distfiles
@@ -160,6 +161,7 @@ nam-US: ftp://ftp9.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp1.fr.freebsd.org/pub/FreeBSD/ports/distfiles
+nam-US: http://ftp13.us.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp4.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp4.freebsd.org/pub/FreeBSD/ports/distfiles
 nam-US: http://ftp4.us.freebsd.org/pub/FreeBSD/ports/distfiles
