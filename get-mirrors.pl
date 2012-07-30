@@ -5,12 +5,17 @@
 # as well as for its geographical location.
 #
 # To use this tool, you need to install the following Fink packages:
-#  * uri-find-pm5100 | uri-find-pm5123 | uri-find-pm5124 
-#  * www-mechanize-pm5100 | www-mechanize-pm5123 www-mechanize-pm5124
-#  * html-tree-pm5100 | html-tree-pm5123 | html-tree-pm5124
-#  * geo-ip-pm5100 | html-tree-pm5123 | html-tree-pm5124
-#       
-#    choosing the appropriate Perl version for your system.
+#  * uri-find-pm*
+#  * www-mechanize-pm*
+#  * html-tree-pm*
+#  * geo-ip-pm*
+# You have to choose those variants appropriate for the Perl version on your system.
+#
+# Then, invoke this script as
+#   ./get-mirrors.pl
+# to update all mirror sets, respectively
+#   ./get-mirrors.pl --debian --freebsd
+# to only update the specified ones.
 #
 # TODO: Right now we test all mirrors sequentially, which can take a looong
 #       time. We should try to parallelize this. An easy way for that would
