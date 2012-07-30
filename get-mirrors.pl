@@ -35,6 +35,14 @@
 # 		but that's as not easily parseable.  They really want folks to use e.g 
 # 		http://downloads.sourceforge.net/<project>/<tarball.tar.gz>.  This is set as
 # 		as our Primary mirror option for the SourceForge mirrors.
+#
+# TODO: Some mirrors perform automatic mirror rotation based on the client's IP.
+#       E.g. ftp.cpan.org gets resolved to (and hence served from) different
+#		servers, depending on from where you make requests to it. As a result,
+#		it tends to "wander around" in our mirror list.
+#		Perhaps add an explicit list of such servers to ensure they always get
+#		mapped to the same "region". Perhaps also introduce a special wildcard
+#		regions (say, "*") to be used for such servers that work "everywhere"?
 
 $|++;
 
@@ -217,18 +225,27 @@ sub parse_cpan {
 	my $tree = HTML::TreeBuilder->new();
 	$tree->parse($response->decoded_content);
 	my $hostlist = $tree->look_down(
-		'_tag' => 'a',
+		'_tag' => 'h2',
 		sub {
-			$_[0]->attr('name') =~ /^hostlist$/
+			$_[0]->attr('id') =~ /^hostlist$/
 		},
 	);
 
-	for my $link ($tree->look_down('_tag' => 'a')) {
-		last if ($link->attr('name') =~ /^rsync$/i);
-		next if ($link->attr('href') =~ /^\#/);
-		next if ($link->attr('href') eq "");
-		print "\t", $link->attr('href'), ": ok\n";
-		push(@$links, $link->attr('href'));
+	for my $sub ($hostlist->right()) {
+		last if ($sub->attr('id') =~ /^feedback$/i);
+		for my $link ($sub->look_down('_tag' => 'a')) {
+			last if ($link->attr('name') =~ /^rsync$/i);
+
+			# Only accept ftp/http link
+			next if ($link->attr('href') !~ /^(ftp|http):/);
+
+			# Sanity check: Link content must match href
+			my $content = join('',$link->content_list());
+			next if ($link->attr('href') ne $content);
+
+			print "\t", $link->attr('href'), ": ok\n";
+			push(@$links, $link->attr('href'));
+		}
 	}
 }
 
