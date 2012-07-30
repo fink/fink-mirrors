@@ -1,5 +1,5 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2012-06-25
+Timestamp: 2012-07-30
 
 Primary: ftp://ftp.gnu.org/gnu
 
@@ -33,9 +33,11 @@ aus-AU: ftp://mirror.aarnet.edu.au/pub/gnu
 aus-AU: ftp://mirror.optusnet.com.au/gnu
 aus-AU: http://mirror.aarnet.edu.au/pub/gnu
 aus-AU: http://mirror.optusnet.com.au/gnu
+eur-AT: ftp://gd.tuwien.ac.at/gnu/gnusrc
 eur-AT: http://gd.tuwien.ac.at/gnu/gnusrc
 eur-BE: ftp://ftp.easynet.be/gnu
 eur-BE: http://ftp.easynet.be/ftp/gnu
+eur-BE: http://gnu.cu.be
 eur-CH: ftp://mirror.switch.ch/mirror/gnu
 eur-CH: http://mirror.switch.ch/ftp/mirror/gnu
 eur-CZ: ftp://ftp.sh.cvut.cz/MIRRORS/gnu/pub/gnu
@@ -78,7 +80,6 @@ eur-LV: http://mirrors.webhostinggeeks.com/gnu
 eur-NL: ftp://ftp.mirror.nl/pub/mirror/gnu
 eur-NL: ftp://ftp.nluug.nl/pub/gnu
 eur-NL: http://gnu.xl-mirror.nl
-eur-NL: http://suukyi.chivalry.is/ss/gnuftp
 eur-NO: ftp://ftp.uninett.no/pub/gnu
 eur-NO: ftp://gnuftp.uib.no/pub/gnuftp
 eur-NO: http://gnuftp.uib.no
@@ -89,7 +90,9 @@ eur-PL: ftp://ftp.tpnet.pl/d12/gnu
 eur-PL: ftp://ftp.tpnet.pl/pub/linux/gnu
 eur-PL: ftp://sunsite.icm.edu.pl/pub/gnu
 eur-PL: http://ftp.task.gda.pl/pub/gnu
+eur-PT: ftp://mirrors.fe.up.pt/pub/gnu
 eur-PT: ftp://mirrors.nfsi.pt/pub/gnu
+eur-PT: http://mirrors.fe.up.pt/pub/gnu
 eur-PT: http://mirrors.nfsi.pt/gnu
 eur-RS: ftp://mirror.sbb.rs/gnu
 eur-RS: http://mirror.sbb.rs/gnu
@@ -120,15 +123,12 @@ nam-US: ftp://mirrors.syringanetworks.net/gnu
 nam-US: ftp://open-source-box.org/gnu
 nam-US: http://ftp.club.cc.cmu.edu/pub/gnu
 nam-US: http://ftp.wayne.edu/pub/gnu
-nam-US: http://ftpmirror.gnu.org
 nam-US: http://gnu.mirrorcatalogs.com
 nam-US: http://gnu.mirrors.hoobly.com/gnu
 nam-US: http://gnu.mirrors.pair.com/gnu
 nam-US: http://gnu.spinellicreations.com/gnu
 nam-US: http://mirror.anl.gov/pub/gnu
-nam-US: http://mirror.clarkson.edu/gnu
 nam-US: http://mirror.nexcess.net/gnu
-nam-US: http://mirror.rit.edu/gnu
 nam-US: http://mirror.sdunix.com/gnu
 nam-US: http://mirror.team-cymru.org/gnu
 nam-US: http://mirrors.axint.net/repos/gnu.org
