@@ -181,32 +181,32 @@ sub parse_apache {
 	my $response = shift;
 	my $links = shift;
 
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $table = $tree->look_down(
-			'_tag' => 'th',
-			sub {
-				$_[0]->as_text =~ /last stat/
-			},
-		)->look_up('_tag' => 'table');
-	
-		for my $row ($table->look_down('_tag' => 'tr')) {
-			my @tds = $row->look_down('_tag' => 'td');
-			if (@tds and defined $tds[4]) {
-				my $link = $tds[0]->look_down('_tag' => 'a');
-				if ($link and $tds[4]->as_text eq "ok") {
-					my $url = $link->attr('href');
-					$url =~ s#/$##;
-					print "\t", $url, ": ";
-					if (get_content($url . '/zzz/time.txt') =~ /^\d+$/gs) {
-						print "ok\n";
-						push(@$links, $url);
-					} else {
-						print "failed\n";
-					}
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $table = $tree->look_down(
+		'_tag' => 'th',
+		sub {
+			$_[0]->as_text =~ /last stat/
+		},
+	)->look_up('_tag' => 'table');
+
+	for my $row ($table->look_down('_tag' => 'tr')) {
+		my @tds = $row->look_down('_tag' => 'td');
+		if (@tds and defined $tds[4]) {
+			my $link = $tds[0]->look_down('_tag' => 'a');
+			if ($link and $tds[4]->as_text eq "ok") {
+				my $url = $link->attr('href');
+				$url =~ s#/$##;
+				print "\t", $url, ": ";
+				if (get_content($url . '/zzz/time.txt') =~ /^\d+$/gs) {
+					print "ok\n";
+					push(@$links, $url);
+				} else {
+					print "failed\n";
 				}
 			}
 		}
+	}
 }
 
 ### CPAN
@@ -214,22 +214,22 @@ sub parse_cpan {
 	my $response = shift;
 	my $links = shift;
 	
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $hostlist = $tree->look_down(
-			'_tag' => 'a',
-			sub {
-				$_[0]->attr('name') =~ /^hostlist$/
-			},
-		);
-	
-		for my $link ($tree->look_down('_tag' => 'a')) {
-			last if ($link->attr('name') =~ /^rsync$/i);
-			next if ($link->attr('href') =~ /^\#/);
-			next if ($link->attr('href') eq "");
-			print "\t", $link->attr('href'), ": ok\n";
-			push(@$links, $link->attr('href'));
-		}
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $hostlist = $tree->look_down(
+		'_tag' => 'a',
+		sub {
+			$_[0]->attr('name') =~ /^hostlist$/
+		},
+	);
+
+	for my $link ($tree->look_down('_tag' => 'a')) {
+		last if ($link->attr('name') =~ /^rsync$/i);
+		next if ($link->attr('href') =~ /^\#/);
+		next if ($link->attr('href') eq "");
+		print "\t", $link->attr('href'), ": ok\n";
+		push(@$links, $link->attr('href'));
+	}
 }
 
 ### CTAN
@@ -237,20 +237,20 @@ sub parse_ctan {
 	my $response = shift;
 	my $links = shift;
 
-		for my $line (split(/\r?\n/, $response->decoded_content)) {
-			# Typical line:
-			#    URL: ftp://carroll.aset.psu.edu/pub/CTAN
-			if ($line =~ /^\s+URL: (\S+)$/) {
-				my $url = $1;
-				print "\t", $url, ": ";
-				if (get_content($url . '/CTAN.sites')) {
-					print "ok\n";
-					push(@$links, $url);
-				} else {
-					print "failed\n";
-				}
+	for my $line (split(/\r?\n/, $response->decoded_content)) {
+		# Typical line:
+		#    URL: ftp://carroll.aset.psu.edu/pub/CTAN
+		if ($line =~ /^\s+URL: (\S+)$/) {
+			my $url = $1;
+			print "\t", $url, ": ";
+			if (get_content($url . '/CTAN.sites')) {
+				print "ok\n";
+				push(@$links, $url);
+			} else {
+				print "failed\n";
 			}
 		}
+	}
 }
 
 ### Debian
@@ -258,20 +258,20 @@ sub parse_debian {
 	my $response = shift;
 	my $links = shift;
 
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $table = $tree->look_down(
-			'_tag' => 'th',
-			sub { $_[0]->as_text eq "Country" },
-		)->look_up('_tag' => 'table');
-		if ($table) {
-			for my $link ($table->look_down('_tag' => 'a')) {
-				if ($link) {
-					print "\t", $link->attr('href'), ": ok\n";
-					push(@$links, $link->attr('href'));
-				}
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $table = $tree->look_down(
+		'_tag' => 'th',
+		sub { $_[0]->as_text eq "Country" },
+	)->look_up('_tag' => 'table');
+	if ($table) {
+		for my $link ($table->look_down('_tag' => 'a')) {
+			if ($link) {
+				print "\t", $link->attr('href'), ": ok\n";
+				push(@$links, $link->attr('href'));
 			}
 		}
+	}
 }
 
 ### FreeBSD
@@ -279,34 +279,34 @@ sub parse_freebsd {
 	my $response = shift;
 	my $links = shift;
 
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $tag = $tree->look_down(
-			'_tag' => 'div',
-			sub { $_[0]->attr('class') eq "VARIABLELIST" },
-		);
-		if ($tag) {
-			FREEBSDLINKS: for my $link ($tag->look_down('_tag' => 'a')) {
-				if ($link) {
-					my $url = $link->attr('href');
-					next if ($url =~ m#^rsync://#);
-					$url =~ s,/$,,;
-					$url = $url . '/ports/distfiles/';
-					for my $num (0..2) {
-						my $tempurl = $url . 'exifautotran.txt';
-						print "\t", $tempurl, ": ";
-						my $content = get_content($tempurl);
-						if ($content =~ /Transforms Exif files/gs) {
-							print "ok\n";
-							push(@$links, $url);
-							next FREEBSDLINKS;
-						} else {
-							print "failed\n";
-						}
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $tag = $tree->look_down(
+		'_tag' => 'div',
+		sub { $_[0]->attr('class') eq "VARIABLELIST" },
+	);
+	if ($tag) {
+		FREEBSDLINKS: for my $link ($tag->look_down('_tag' => 'a')) {
+			if ($link) {
+				my $url = $link->attr('href');
+				next if ($url =~ m#^rsync://#);
+				$url =~ s,/$,,;
+				$url = $url . '/ports/distfiles/';
+				for my $num (0..2) {
+					my $tempurl = $url . 'exifautotran.txt';
+					print "\t", $tempurl, ": ";
+					my $content = get_content($tempurl);
+					if ($content =~ /Transforms Exif files/gs) {
+						print "ok\n";
+						push(@$links, $url);
+						next FREEBSDLINKS;
+					} else {
+						print "failed\n";
 					}
 				}
 			}
 		}
+	}
 }
 
 ### GIMP
@@ -314,33 +314,33 @@ sub parse_gimp {
 	my $response = shift;
 	my $links = shift;
 
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $dl = $tree->look_down(
-			'_tag' => 'dl',
-			sub { $_[0]->attr('class') eq "download-mirror" },
-		);
-		if ($dl) {
-			GIMPLINKS: for my $link ($dl->look_down('_tag' => 'a')) {
-				if ($link) {
-					next if ($link->look_up('_tag' => 'dd')->as_text =~ /WAIX/);
-					my $url = $link->attr('href');
-					next if ($url =~ m#^rsync://#);
-					$url = $url . '/' unless ($url =~ m#/$#);
-					for my $num (0..2) {
-						my $tempurl = $url . 'gimp/' x $num;
-						print "\t", $tempurl, ": ";
-						if (get_content($tempurl . 'README') =~ /This is the root directory of the official GIMP/) {
-							print "ok\n";
-							push(@$links, $tempurl);
-							next GIMPLINKS;
-						} else {
-							print "failed\n";
-						}
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $dl = $tree->look_down(
+		'_tag' => 'dl',
+		sub { $_[0]->attr('class') eq "download-mirror" },
+	);
+	if ($dl) {
+		GIMPLINKS: for my $link ($dl->look_down('_tag' => 'a')) {
+			if ($link) {
+				next if ($link->look_up('_tag' => 'dd')->as_text =~ /WAIX/);
+				my $url = $link->attr('href');
+				next if ($url =~ m#^rsync://#);
+				$url = $url . '/' unless ($url =~ m#/$#);
+				for my $num (0..2) {
+					my $tempurl = $url . 'gimp/' x $num;
+					print "\t", $tempurl, ": ";
+					if (get_content($tempurl . 'README') =~ /This is the root directory of the official GIMP/) {
+						print "ok\n";
+						push(@$links, $tempurl);
+						next GIMPLINKS;
+					} else {
+						print "failed\n";
 					}
 				}
 			}
 		}
+	}
 }
 
 ### Gnome
@@ -348,23 +348,23 @@ sub parse_gnome {
 	my $response = shift;
 	my $links = shift;
 
-		my $finder = URI::Find->new(
-			sub {
-				my ( $url, $orig_uri ) = @_;
-				return if ($url =~ /^mailto/);
-				$url =~ s#/$##;
-				print "\t", $url, ": ";
-				if (get_content($url . '/LATEST') =~ /download.gnome.org/gs) {
-					print "ok\n";
-					push(@$links, $url);
-				} else {
-					print "failed\n";
-				}
-			},
-		);
+	my $finder = URI::Find->new(
+		sub {
+			my ( $url, $orig_uri ) = @_;
+			return if ($url =~ /^mailto/);
+			$url =~ s#/$##;
+			print "\t", $url, ": ";
+			if (get_content($url . '/LATEST') =~ /download.gnome.org/gs) {
+				print "ok\n";
+				push(@$links, $url);
+			} else {
+				print "failed\n";
+			}
+		},
+	);
 
-		my $content = $mech->content;
-		$finder->find( \$content );
+	my $content = $mech->content;
+	$finder->find( \$content );
 }
 
 ### GNU
@@ -372,77 +372,21 @@ sub parse_gnu {
 	my $response = shift;
 	my $links = shift;
 
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $content = $tree->look_down(
-			'_tag' => 'div',
-			sub { $_[0]->attr('id') eq "content" },
-		);
-		if ($content) {
-			for my $link ($content->look_down('_tag' => 'a')) {
-				if ($link) {
-					my $url = $link->attr('href');
-					next if ($url =~ /^rsync:\/\//);
-					$url =~ s#(ftp://)+#ftp://#g;
-					$url =~ s#/+$##gs;
-					print "\t", $url, ": ";
-					if (get_content($url . '/=README') =~ /This directory contains programs/gs) {
-						print "ok\n";
-						push(@$links, $url);
-					} else {
-						print "failed\n";
-					}
-				}
-			}
-		}
-}
-
-### KDE
-sub parse_kde {
-	my $response = shift;
-	my $links = shift;
-
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		my $table = $tree->look_down(
-			'_tag' => 'th',
-			sub {
-				$_[0]->as_text =~ /last stat/
-			},
-		)->look_up('_tag' => 'table');
-	
-		for my $row ($table->look_down('_tag' => 'tr')) {
-			my @tds = $row->look_down('_tag' => 'td');
-			if (@tds and defined $tds[4]) {
-				my $link = $tds[0]->look_down('_tag' => 'a');
-				if ($link and $tds[4]->as_text eq "ok") {
-					my $url = $link->attr('href');
-					$url =~ s#/$##;
-					print "\t", $url, ": ";
-					if (get_content($url . '/README') =~ /This is the ftp distribution/gs) {
-						print "ok\n";
-						push(@$links, $url);
-					} else {
-						print "failed\n";
-					}
-				}
-			}
-		}
-}
-
-## PostgreSQL
-sub parse_postgresql {
-	my $response = shift;
-	my $links = shift;
-
-		my $tree = HTML::TreeBuilder->new();
-		$tree->parse($response->decoded_content);
-		for my $link ($tree->look_down('_tag' => 'a')) {
-			my $url = $link->attr('href');
-			if ($url =~ s/^.*?\&url=//) {
-				$url = uri_unescape($url);
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $content = $tree->look_down(
+		'_tag' => 'div',
+		sub { $_[0]->attr('id') eq "content" },
+	);
+	if ($content) {
+		for my $link ($content->look_down('_tag' => 'a')) {
+			if ($link) {
+				my $url = $link->attr('href');
+				next if ($url =~ /^rsync:\/\//);
+				$url =~ s#(ftp://)+#ftp://#g;
+				$url =~ s#/+$##gs;
 				print "\t", $url, ": ";
-				if (get_content($url . 'README') =~ /This directory contains the current and past releases of PostgreSQL/gs) {
+				if (get_content($url . '/=README') =~ /This directory contains programs/gs) {
 					print "ok\n";
 					push(@$links, $url);
 				} else {
@@ -450,6 +394,62 @@ sub parse_postgresql {
 				}
 			}
 		}
+	}
+}
+
+### KDE
+sub parse_kde {
+	my $response = shift;
+	my $links = shift;
+
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	my $table = $tree->look_down(
+		'_tag' => 'th',
+		sub {
+			$_[0]->as_text =~ /last stat/
+		},
+	)->look_up('_tag' => 'table');
+
+	for my $row ($table->look_down('_tag' => 'tr')) {
+		my @tds = $row->look_down('_tag' => 'td');
+		if (@tds and defined $tds[4]) {
+			my $link = $tds[0]->look_down('_tag' => 'a');
+			if ($link and $tds[4]->as_text eq "ok") {
+				my $url = $link->attr('href');
+				$url =~ s#/$##;
+				print "\t", $url, ": ";
+				if (get_content($url . '/README') =~ /This is the ftp distribution/gs) {
+					print "ok\n";
+					push(@$links, $url);
+				} else {
+					print "failed\n";
+				}
+			}
+		}
+	}
+}
+
+## PostgreSQL
+sub parse_postgresql {
+	my $response = shift;
+	my $links = shift;
+
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	for my $link ($tree->look_down('_tag' => 'a')) {
+		my $url = $link->attr('href');
+		if ($url =~ s/^.*?\&url=//) {
+			$url = uri_unescape($url);
+			print "\t", $url, ": ";
+			if (get_content($url . 'README') =~ /This directory contains the current and past releases of PostgreSQL/gs) {
+				print "ok\n";
+				push(@$links, $url);
+			} else {
+				print "failed\n";
+			}
+		}
+	}
 }
 
 sub timestamp {
