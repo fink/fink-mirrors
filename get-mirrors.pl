@@ -236,15 +236,17 @@ sub parse_cpan {
 		for my $link ($sub->look_down('_tag' => 'a')) {
 			last if ($link->attr('name') =~ /^rsync$/i);
 
-			# Only accept ftp/http link
-			next if ($link->attr('href') !~ /^(ftp|http):/);
+			my $url = $link->attr('href');
+
+			# Only accept ftp/http links
+			next if ($url !~ m#^(ftp|http)://#);
 
 			# Sanity check: Link content must match href
 			my $content = join('',$link->content_list());
-			next if ($link->attr('href') ne $content);
+			next if ($url ne $content);
 
-			print "\t", $link->attr('href'), ": ok\n";
-			push(@$links, $link->attr('href'));
+			print "\t", $url, ": ok\n";
+			push(@$links, $url);
 		}
 	}
 }
@@ -396,12 +398,16 @@ sub parse_gnu {
 		sub { $_[0]->attr('id') eq "content" },
 	);
 	if ($content) {
-		for my $link ($content->look_down('_tag' => 'a')) {
+		for my $link ($content->look_down('_tag' => 'a', sub { $_[0]->attr('rel') eq "nofollow" })) {
 			if ($link) {
 				my $url = $link->attr('href');
-				next if ($url =~ /^rsync:\/\//);
-				$url =~ s#(ftp://)+#ftp://#g;
+				# Only accept ftp/http links
+				next if ($url !~ m#^(ftp|http)://#);
+
+				# Remove trailing slashes
 				$url =~ s#/+$##gs;
+
+				# Finally, test whether the mirror is reachable
 				print "\t", $url, ": ";
 				if (get_content($url . '/=README') =~ /This directory contains programs/gs) {
 					print "ok\n";
