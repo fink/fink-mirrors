@@ -54,6 +54,7 @@ use File::Slurp;
 use File::Temp qw(mktemp);
 use Geo::IP;
 use HTML::TreeBuilder;
+use List::MoreUtils qw(uniq);
 use LWP::UserAgent;
 use Net::FTP;
 use WWW::Mechanize;
@@ -298,34 +299,26 @@ sub parse_freebsd {
 	my $response = shift;
 	my $links = shift;
 
-	my $tree = HTML::TreeBuilder->new();
-	$tree->parse($response->decoded_content);
-	my $tag = $tree->look_down(
-		'_tag' => 'div',
-		sub { $_[0]->attr('class') eq "VARIABLELIST" },
-	);
-	if ($tag) {
-		FREEBSDLINKS: for my $link ($tag->look_down('_tag' => 'a')) {
-			if ($link) {
-				my $url = $link->attr('href');
-				next if ($url =~ m#^rsync://#);
-				$url =~ s,/$,,;
-				$url = $url . '/ports/distfiles/';
-				for my $num (0..2) {
-					my $tempurl = $url . 'exifautotran.txt';
-					print "\t", $tempurl, ": ";
-					my $content = get_content($tempurl);
-					if ($content =~ /Transforms Exif files/gs) {
-						print "ok\n";
-						push(@$links, $url);
-						next FREEBSDLINKS;
-					} else {
-						print "failed\n";
-					}
+	FREEBSDLINKS: for my $line (split(/\r?\n/, $response->decoded_content)) {
+		if ($line =~ /href=\"((ftp|http):\S+)\"/) {
+			my $url = $1;
+			print "\t", $url, ": \n";
+			$url = $url . 'ports/distfiles/';
+			for my $num (0..2) {
+				my $tempurl = $url . 'exifautotran.txt';
+				print "\t", $tempurl, ": ";
+				my $content = get_content($tempurl);
+				if ($content =~ /Transforms Exif files/gs) {
+					print "ok\n";
+					push(@$links, $url);
+					next FREEBSDLINKS;
+				} else {
+					print "failed\n";
 				}
 			}
 		}
 	}
+	@$links=uniq @$links;
 }
 
 ### GIMP
