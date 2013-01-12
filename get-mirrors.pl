@@ -75,10 +75,7 @@ my %mirror_sites = (
 	'Gimp' => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
 	'GNOME' => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU' => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftp.gnu.org/gnu' ],
-	# FIXME: http://download.kde.org/mirrorstatus.html doesn't exist any more.
-	# http://files.kde.org/extra/mirrors.html appears to be the new site, but it's not compatible
-	# with the existing parse_kde().
-#	'KDE' => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'ftp://ftp.kde.org/pub/kde' ],
+	'KDE' => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'ftp://ftp.kde.org/pub/kde' ],
 	# FIXME: Format changed, they now only list redirect URls
 #	'PostgreSQL' => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
 	);
@@ -421,26 +418,20 @@ sub parse_kde {
 	my $tree = HTML::TreeBuilder->new();
 	$tree->parse($response->decoded_content);
 	my $table = $tree->look_down(
-		'_tag' => 'th',
-		sub {
-			$_[0]->as_text =~ /last stat/
-		},
-	)->look_up('_tag' => 'table');
-
+		'_tag' => 'tbody');
 	for my $row ($table->look_down('_tag' => 'tr')) {
-		my @tds = $row->look_down('_tag' => 'td');
-		if (@tds and defined $tds[4]) {
-			my $link = $tds[0]->look_down('_tag' => 'a');
-			if ($link and $tds[4]->as_text eq "ok") {
-				my $url = $link->attr('href');
-				$url =~ s#/$##;
-				print "\t", $url, ": ";
-				if (get_content($url . '/README') =~ /This is the ftp distribution/gs) {
-					print "ok\n";
-					push(@$links, $url);
-				} else {
-					print "failed\n";
-				}
+		TDS: for my $tds ($row->look_down('_tag' => 'td')) {
+			my $link = $tds->look_down('_tag' => 'a');
+			next TDS if !($link);
+			my $url = $link->attr('href');
+			next TDS if $url =~ /rsync:/;
+			$url =~ s#/$##;
+			print "\t", $url, ": ";
+			if (get_content($url . '/README') =~ /This is the ftp distribution/gs) {
+				print "ok\n";
+				push(@$links, $url);
+			} else {
+				print "failed\n";
 			}
 		}
 	}
