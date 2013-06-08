@@ -1,9 +1,14 @@
+2013-05-31	Hanspeter Niederstrasser	<nieder@users.sourceforge.net>
+
+	* Add http versions for some upstream sites
+	* gnome: add http://ftp.gnome.org/pub/GNOME
+	* gnu: change Primary to http://ftpmirror.gnu.org/ 
+
 2012-06-24	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* cpan, ctan, freebsd, gimp, gnome, gnu: mirror updates via 'get-mirrors.pl' 
 	* sourceforge: manually removed bad mirrors
 	* copyright update
-	
 
 2011-10-11	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
