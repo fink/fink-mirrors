@@ -1,7 +1,7 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2013-01-11
+Timestamp: 2013-06-08
 
-Primary: ftp://ftp.gnu.org/gnu
+Primary: http://ftpmirror.gnu.org/
 
 afr-NA: ftp://download.polytechnic.edu.na/pub/ftp.gnu.org/gnu
 afr-NA: http://download.polytechnic.edu.na/pub/ftp.gnu.org/gnu
