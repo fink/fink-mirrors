@@ -1,3 +1,10 @@
+2014-03-04	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Refreshed apache, cpan, ctan, freebsd, gimp, gnome, gnu, kde, and sourceforge
+	  mirrors via 'get-mirrors.pl'
+	* Updated 'get-mirrors.pl' to add a parser for SourceForge.net mirrors.
+	* Updated the apt mirror for the new server's directory structure.
+
 2013-06-08	Hanspeter Niederstrasser	<nieder@users.sourceforge.net>
 
 	* Add http versions for some upstream sites
