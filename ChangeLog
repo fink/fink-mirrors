@@ -3,7 +3,7 @@
 	* Refreshed apache, cpan, ctan, freebsd, gimp, gnu, kde, and sourceforge
 	  mirrors via 'get-mirrors.pl' (script was actually run on the 14th)
 
-2014-03-04	Justin Hallett  <thesin@users.sourceforge.net>
+2014-04-14	Justin Hallett  <thesin@users.sourceforge.net>
 
 	* Added new master machine for distfiles and rsync, as well an entry under
 	  its geolocalized name.
