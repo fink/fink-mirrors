@@ -75,7 +75,7 @@ my %mirror_sites = (
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
 	'GNOME'       => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftpmirror.gnu.org' ],
-	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'ftp://ftp.kde.org/pub/kde' ],
+	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
 	# FIXME: Format changed, they now only list redirect URls
 #	'PostgreSQL'  => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
 	'SourceForge' => [ \&parse_sourceforge, 'http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors','http://downloads.sourceforge.net'],
