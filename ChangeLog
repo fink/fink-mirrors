@@ -1,3 +1,8 @@
+2014-06-20	Hanspeter Niederstrasser	<nieder@users.sourceforge.net>
+
+	* Updated KDE mirrors
+	  ftp://ftp.kde.org is not the upstream supported primary address
+
 2014-04-16	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Refreshed apache, cpan, ctan, freebsd, gimp, gnu, kde, and sourceforge
