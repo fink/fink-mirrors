@@ -71,7 +71,8 @@ my %mirror_sites = (
 	'CPAN'        => [ \&parse_cpan, 'http://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
 	'CTAN'        => [ \&parse_ctan, 'ftp://tug.ctan.org/tex-archive/README.mirrors', 'ftp://tug.ctan.org/tex-archive' ],
 	'Debian'      => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
-	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/distfiles' ],
+	# 4 July 2014:  most FreeBSD mirrors have a stub README mentioning that operations have moved to distcache.FreeBSD.org.  Some haven't done that yet, though, so we'll keep the option to scan for mirrors until they all change over.
+	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'http://distcache.FreeBSD.org/ports-distfiles/' ],
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
 	'GNOME'       => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftpmirror.gnu.org' ],
