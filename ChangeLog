@@ -1,3 +1,22 @@
+2014-04-07	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Released fink-mirrors 0.37.0.1.
+	
+2014-04-07	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Updated postgresql "mirrors" just to use the main download site, as they no
+	  longer appear to have a mirror list.
+	* get-mirrors.pl: 
+		* Sourceforge list of mirrors got moved, so fix that.
+		* Make the HTTP-based GNOME and GNU master sites the primary here
+		  (I'd been just undoing those changes to the mirror lists).
+		* Update FreeBSD primary site.  Most mirrors no longer have an independent
+		  distfiles cache and say to use this new primary.  Some mirrors still have
+		  their own distfiles cache, so we'll still offer them as options while this
+		  lasts.
+	* Refreshed apache, cpan, ctan, freebsd, gimp, gnome, gnu, kde, and sourceforge
+	  mirrors via 'get-mirrors.pl'
+
 2014-06-20	Hanspeter Niederstrasser	<nieder@users.sourceforge.net>
 
 	* Updated KDE mirrors
