@@ -1,5 +1,5 @@
 # Official mirror list: http://files.kde.org/extra/mirrors.html
-Timestamp: 2014-06-20
+Timestamp: 2014-07-04
 
 Primary: http://download.kde.org/
 
@@ -9,7 +9,6 @@ asi-CN: http://mirrors.ustc.edu.cn/kde
 asi-JP: ftp://ftp.kddlabs.co.jp/pub/X11/kde
 asi-JP: http://ftp.kddlabs.co.jp/pub/X11/kde
 asi-KR: ftp://ftp.kaist.ac.kr/kde
-asi-KR: ftp://ftp.neowiz.com/X/KDE
 asi-KR: http://ftp.kaist.ac.kr/kde
 asi-KR: http://ftp.neowiz.com/X/KDE
 asi-OM: ftp://mirror.squ.edu.om/kde
@@ -54,7 +53,6 @@ eur-PL: ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.kde.org
 eur-PL: http://ftp.icm.edu.pl/pub/unix/kde
 eur-PL: http://ftp.pbone.net/pub/kde
 eur-PL: http://piotrkosoft.net/pub/mirrors/ftp.kde.org
-eur-PT: ftp://mirrors.fe.up.pt/pub/kde
 eur-PT: http://mirrors.fe.up.pt/pub/kde
 eur-SE: ftp://archive.sunet.se/pub/X11/kde
 eur-SE: http://archive.sunet.se/pub/X11/kde
@@ -69,6 +67,7 @@ nam-CA: http://mirror.csclub.uwaterloo.ca/kde
 nam-CA: http://mirror.its.dal.ca/kde
 nam-US: ftp://carroll.aset.psu.edu/pub/kde
 nam-US: ftp://ftp.ussg.iu.edu/pub/kde
+nam-US: ftp://kde.mirrorcatalogs.com/kde
 nam-US: ftp://mirror.cc.columbia.edu/pub/software/kde
 nam-US: ftp://mirrors.mit.edu/kde
 nam-US: http://carroll.aset.psu.edu/pub/kde
