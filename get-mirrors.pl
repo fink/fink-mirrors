@@ -28,7 +28,8 @@
 #       And independently of this, we could unify several of the parsers by
 #       a single mirmon parser.
 #
-# TODO: PostgreSQL analysis is broken; the website we used to use only lists redirect URLs now.
+# NOTE: PostgreSQL appears no longer to have a centralized list of mirrors.
+#       We'll use a "mirror list" which is the upstream download site.
 # 
 # NOTE: SourceForge does have a mirror list at 
 # 		http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, 
@@ -76,7 +77,7 @@ my %mirror_sites = (
 	'GNOME'       => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'ftp://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'ftp://ftpmirror.gnu.org' ],
 	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
-	# FIXME: Format changed, they now only list redirect URls
+	# PostgreSQL upstream no longer mentions the presence of any mirror sites.
 #	'PostgreSQL'  => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
 	'SourceForge' => [ \&parse_sourceforge, 'http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors','http://downloads.sourceforge.net'],
 	);
@@ -441,6 +442,7 @@ sub parse_kde {
 }
 
 ## PostgreSQL
+# 4 July 2014:  not currently used.
 sub parse_postgresql {
 	my $response = shift;
 	my $links = shift;
