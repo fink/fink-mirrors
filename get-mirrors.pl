@@ -31,11 +31,10 @@
 # NOTE: PostgreSQL appears no longer to have a centralized list of mirrors.
 #       We'll use a "mirror list" which is the upstream download site.
 # 
-# NOTE: SourceForge does have a mirror list at 
-# 		http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, 
-# 		but that's as not easily parseable.  They really want folks to use e.g 
-# 		http://downloads.sourceforge.net/<project>/<tarball.tar.gz>.  This is set as
-# 		as our Primary mirror option for the SourceForge mirrors.
+# NOTE: SourceForge mirror list at 
+# 		http://sourceforge.net/p/forge/documentation/Mirrors/ provides only the
+#		base hostnames.  We're OK as long as they don't move this page (again)
+#		or change the download URL structure (again). 
 #
 # TODO: Some mirrors perform automatic mirror rotation based on the client's IP.
 #       E.g. ftp.cpan.org gets resolved to (and hence served from) different
@@ -79,7 +78,7 @@ my %mirror_sites = (
 	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
 	# PostgreSQL upstream no longer mentions the presence of any mirror sites.
 #	'PostgreSQL'  => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
-	'SourceForge' => [ \&parse_sourceforge, 'http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors','http://downloads.sourceforge.net'],
+	'SourceForge' => [ \&parse_sourceforge, 'http://sourceforge.net/p/forge/documentation/Mirrors/','http://downloads.sourceforge.net'],
 	);
 
 $debug = 0;
