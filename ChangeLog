@@ -1,3 +1,8 @@
+2014-09-20	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Refreshed mirrors via 'get-mirrors.pl'.
+	* Released fink-mirrors 0.37.0.2.
+	
 2014-04-07	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Released fink-mirrors 0.37.0.1.
