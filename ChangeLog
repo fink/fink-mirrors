@@ -1,3 +1,11 @@
+2014-10-27	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Refreshed mirrors via 'get-mirrors.pl', apart from GNOME, which appears to 
+	  have ditched its mirror list file that we were using, and Google pointed me
+	  to a GNOME wiki which pointed at a nonexistent file, itself.  Hopefully,
+	  we'll get this figured out. 
+	* Released fink-mirrors 0.37.1.1.
+	
 2014-09-20	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Refreshed mirrors via 'get-mirrors.pl'.
