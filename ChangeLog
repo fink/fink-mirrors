@@ -1,4 +1,10 @@
-2014-10-27	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+2014-10-28	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+
+	* Updated GNOME mirror source and parser for get-mirrors.pl
+	* Refreshed mirrors via 'get-mirrors.pl'. 
+	* Released fink-mirrors 0.38.1.1.
+
+2014-10-17	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Refreshed mirrors via 'get-mirrors.pl', apart from GNOME, which appears to 
 	  have ditched its mirror list file that we were using, and Google pointed me
