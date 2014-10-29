@@ -472,10 +472,10 @@ sub parse_sourceforge {
 
 	my $tree = HTML::TreeBuilder->new();
 	$tree->parse($response->decoded_content);
-	# As of right now (4 March, 2014) the information we want, which is the short name
+	# As of right now (4 March, 2014) the information we want, which is the short name,
 	# is just hardcoded in the table on 
 	# http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors, so we can iterate over
-	# those entries and reject anything that has 
+	# those entries and reject anything else.
 	for my $entry ($tree->look_down('_tag' => 'td')) {
 		my $url = ($entry->content_list)[0];
 		next if $url =~ /HTML/ ; # we can remove anything which is an HTML::Element structure
