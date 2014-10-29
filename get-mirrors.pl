@@ -74,7 +74,7 @@ my %mirror_sites = (
 	# 4 July 2014:  most FreeBSD mirrors have a stub README mentioning that operations have moved to distcache.FreeBSD.org.  Some haven't done that yet, though, so we'll keep the option to scan for mirrors until they all change over.
 	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'http://distcache.FreeBSD.org/ports-distfiles/' ],
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
-	'GNOME'       => [ \&parse_gnome, 'http://ftp.gnome.org/pub/GNOME/MIRRORS', 'http://ftp.gnome.org/pub/GNOME' ],
+	'GNOME'       => [ \&parse_gnome, 'https://download.gnome.org/WELCOME.msg.mirrorlist', 'http://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'http://ftpmirror.gnu.org' ],
 	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
 	# PostgreSQL upstream no longer mentions the presence of any mirror sites.
@@ -360,24 +360,25 @@ sub parse_gimp {
 sub parse_gnome {
 	my $response = shift;
 	my $links = shift;
-
-	my $finder = URI::Find->new(
-		sub {
-			my ( $url, $orig_uri ) = @_;
-			return if ($url =~ /^mailto/);
-			$url =~ s#/$##;
-			print "\t", $url, ": ";
-			if (get_content($url . '/LATEST') =~ /download.gnome.org/gs) {
-				print "ok\n";
-				push(@$links, $url);
-			} else {
-				print "failed\n";
-			}
-		},
+	my $tree = HTML::TreeBuilder->new();
+	$tree->parse($response->decoded_content);
+	# grab mirror section
+	my $mirror_section = $tree->look_down(
+		'_tag' => 'div',
+		sub { $_[0]->attr('id') eq "mirrorbrain-mirrors" },
 	);
-
-	my $content = $mech->content;
-	$finder->find( \$content );
+	# Get mirror URLs, including WELCOME.msg 
+	for my $link ($mirror_section->look_down('_tag' => 'a' )) {
+		my $rawurl = $link->attr('href');
+		my ($url) = ($rawurl =~ /(.*)WELCOME\.msg/); #base directory
+		print "\t", $url, ": ";
+		if (get_content($rawurl) =~ /download.gnome.org/gs) {
+			print "ok\n";
+			push(@$links, $url);
+		} else {
+			print "failed\n";
+		}
+	}
 }
 
 ### GNU
