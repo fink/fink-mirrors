@@ -1,4 +1,4 @@
-2014-10-28	Alexander Hansen  <alexkhansen@users.sourceforge.net>
+2014-10-29	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Updated GNOME mirror source and parser for get-mirrors.pl
 	* Refreshed mirrors via 'get-mirrors.pl'. 
