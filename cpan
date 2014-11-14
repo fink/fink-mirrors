@@ -1,5 +1,5 @@
 # Official mirror list: http://www.cpan.org/SITES.html
-Timestamp: 2014-10-29
+Timestamp: 2014-11-13
 
 Primary: ftp://ftp.cpan.org/pub/CPAN
 
@@ -102,6 +102,7 @@ eur-BE: ftp://ftp.belnet.be/mirror/ftp.cpan.org
 eur-BE: http://cpan.cu.be
 eur-BE: http://cpan.weepeetelecom.be
 eur-BE: http://ftp.belnet.be/ftp.cpan.org
+eur-BE: http://lib.ugent.be/CPAN
 eur-BG: ftp://mirrors.neterra.net/CPAN
 eur-BG: http://mirrors.neterra.net/CPAN
 eur-BY: ftp://ftp.byfly.by/pub/CPAN
@@ -314,7 +315,6 @@ nam-US: ftp://cpan.pair.com/pub/CPAN
 nam-US: ftp://ftp-mirror.internap.com/pub/CPAN
 nam-US: ftp://ftp.cpan.org/pub/CPAN
 nam-US: ftp://ftp.osuosl.org/pub/CPAN
-nam-US: ftp://ftp.ottix.net/pub/CPAN
 nam-US: ftp://ftp.uwsg.iu.edu/pub/perl/CPAN
 nam-US: ftp://ftp.wayne.edu/CPAN
 nam-US: ftp://mirror.cc.columbia.edu/pub/software/cpan

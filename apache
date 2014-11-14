@@ -1,12 +1,11 @@
 # Official mirror list: http://www.apache.org/mirrors/
-Timestamp: 2014-10-29
+Timestamp: 2014-11-13
 
 Primary: http://www.apache.org/dist
 
 afr-ZA: http://apache.is.co.za
 afr-ZA: http://apache.saix.net
 asi-BD: http://mirrors.ispros.com.bd/apache
-asi-CN: http://apache.dataguru.cn
 asi-CN: http://apache.fayea.com/apache-mirror
 asi-CN: http://mirror.bit.edu.cn/apache
 asi-CN: http://mirrors.cnnic.cn/apache
@@ -14,11 +13,9 @@ asi-CN: http://mirrors.hust.edu.cn/apache
 asi-HK: http://apache.01link.hk
 asi-HK: http://apache.communilink.net
 asi-HK: http://ftp.cuhk.edu.hk/pub/packages/apache.org
-asi-JP: ftp://ftp.kddilabs.jp/infosystems/apache
 asi-JP: ftp://ftp.meisei-u.ac.jp/mirror/apache/dist
 asi-JP: ftp://ftp.riken.jp/net/apache
 asi-JP: http://ftp.jaist.ac.jp/pub/apache
-asi-JP: http://ftp.kddilabs.jp/infosystems/apache
 asi-JP: http://ftp.meisei-u.ac.jp/mirror/apache/dist
 asi-JP: http://ftp.riken.jp/net/apache
 asi-JP: http://ftp.tsukuba.wide.ad.jp/software/apache
@@ -28,6 +25,7 @@ asi-KR: http://apache.tt.co.kr
 asi-KR: http://mirror.apache-kr.org
 asi-PK: ftp://stingray.cyber.net.pk/apache
 asi-PK: http://stingray.cyber.net.pk/pub/apache
+asi-SA: http://mirrors.isu.net.sa/pub/apache
 asi-SG: http://mirror.nus.edu.sg/apache
 asi-TH: http://mirror.issp.co.th/apache
 asi-TW: ftp://ftp.stu.edu.tw/Unix/Web/apache
@@ -35,7 +33,6 @@ asi-TW: ftp://ftp.twaren.net/Unix/Web/apache
 asi-TW: http://apache.stu.edu.tw
 asi-TW: http://ftp.mirror.tw/pub/apache
 asi-TW: http://ftp.tc.edu.tw/pub/Apache
-asi-TW: http://ftp.twaren.net/Unix/Web/apache
 asi-VN: http://mirrors.digipower.vn/apache
 asi-VN: http://mirrors.viethosting.vn/apache
 aus-AU: http://apache.mirror.serversaustralia.com.au
@@ -115,6 +112,7 @@ eur-IT: http://apache.fis.uniroma2.it
 eur-IT: http://apache.panu.it
 eur-IT: http://it.apache.contactlab.it
 eur-IT: http://mirror.nohup.it/apache
+eur-IT: http://mirrors.muzzy.it/apache
 eur-LI: http://apache.mirror.telecom.li
 eur-LT: ftp://apache.mirror.vu.lt/apache
 eur-LT: http://apache.mirror.serveriai.lt
@@ -142,6 +140,7 @@ eur-PL: ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.apache.org
 eur-PL: ftp://ftp.task.gda.pl/pub/www/apache/dist
 eur-PL: http://ftp.piotrkosoft.net/pub/mirrors/ftp.apache.org
 eur-PL: http://ftp.ps.pl/pub/apache
+eur-PT: ftp://mirrors.fe.up.pt/pub/apache
 eur-PT: http://mirrors.fe.up.pt/pub/apache
 eur-RU: http://apache-mirror.rbc.ru/pub/apache
 eur-SE: http://apache.mirrors.spacedump.net
@@ -155,7 +154,6 @@ eur-UA: http://apache.volia.net
 eur-UK: ftp://ftp.mirrorservice.org/sites/ftp.apache.org
 eur-UK: http://apache.mirror.anlx.net
 eur-UK: http://apache.mirrors.timporter.net
-eur-UK: http://mirror.catn.com/pub/apache
 eur-UK: http://mirror.ox.ac.uk/sites/rsync.apache.org
 eur-UK: http://mirror.vorboss.net/apache
 eur-UK: http://mirrors.ukfast.co.uk/sites/ftp.apache.org
@@ -203,10 +201,10 @@ nam-US: http://mirrors.advancedhosters.com/apache
 nam-US: http://mirrors.devlib.org/apache
 nam-US: http://mirrors.gigenet.com/apache
 nam-US: http://mirrors.ibiblio.org/apache
+nam-US: http://mirrors.koehn.com/apache
 nam-US: http://mirrors.sonic.net/apache
 nam-US: http://psg.mtu.edu/pub/apache
 nam-US: http://supergsego.com/apache
-nam-US: http://www.bizdirusa.com/mirrors/apache
 nam-US: http://www.carfab.com/apachesoftware
 nam-US: http://www.dsgnwrld.com/am
 nam-US: http://www.eng.lsu.edu/mirrors/apache
@@ -218,7 +216,6 @@ nam-US: http://www.us.apache.org/dist
 nam-US: http://www.webhostingjams.com/mirror/apache
 nam-US: http://www.whoishostingthis.com/mirrors/apache
 sam-AR: http://apache.dattatec.com
-sam-AR: http://apache.mesi.com.ar
 sam-AR: http://apache.xfree.com.ar
 sam-AR: http://mirrors.dcarsat.com.ar/apache
 sam-AR: http://mirrors.nxnethosting.com/apache
