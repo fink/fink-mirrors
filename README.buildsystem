@@ -10,7 +10,7 @@ The script "dist-module.pl" is used to create the release version.
 
 This buildsystem depends on the following items being present for package foo:
 
-  VERSION: a file specifiying the version in the form <number>.cvs
+  VERSION: a file specifiying the version in the form <number>.git
 
   REVISION: an optional file, specifying which revision numbers belong
             to which distributions.  Each line should contain a distribution
