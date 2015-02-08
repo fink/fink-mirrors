@@ -1,11 +1,13 @@
 # Official mirror list: http://files.kde.org/extra/mirrors.html
-Timestamp: 2014-11-13
+Timestamp: 2015-02-06
 
 Primary: http://download.kde.org/
 
 afr-ZA: ftp://ftp.is.co.za/mirror/ftp.kde.org
 afr-ZA: http://ftp.is.co.za/mirror/ftp.kde.org
 asi-CN: http://mirrors.ustc.edu.cn/kde
+asi-JP: ftp://ftp.kddlabs.co.jp/pub/X11/kde
+asi-JP: http://ftp.kddlabs.co.jp/pub/X11/kde
 asi-KR: ftp://ftp.kaist.ac.kr/kde
 asi-KR: ftp://ftp.neowiz.com/X/KDE
 asi-KR: http://ftp.kaist.ac.kr/kde
@@ -20,17 +22,19 @@ eur-CZ: ftp://mirror.oss.maxcdn.com/kde
 eur-CZ: http://ftp.fi.muni.cz/pub/kde
 eur-CZ: http://mirror.karneval.cz/pub/kde
 eur-CZ: http://mirror.oss.maxcdn.com/kde
+eur-DE: ftp://alpha.mirror.ga/kde
+eur-DE: ftp://beta.mirror.ga/kde
 eur-DE: ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.kde.org/pub/kde
 eur-DE: ftp://ftp.rz.uni-wuerzburg.de/pub/unix/kde
 eur-DE: ftp://ftp5.gwdg.de/pub/linux/kde
-eur-DE: ftp://mirror.ga/kde
 eur-DE: ftp://mirror.netcologne.de/kde
 eur-DE: ftp://vesta.informatik.rwth-aachen.de/pub/mirror/kde
 eur-DE: http://download.kde.org
 eur-DE: http://ftp-stud.fht-esslingen.de/Mirrors/ftp.kde.org/pub/kde
 eur-DE: http://ftp.rz.uni-wuerzburg.de/pub/unix/kde
 eur-DE: http://ftp5.gwdg.de/pub/linux/kde
-eur-DE: http://kde.mirror.ga
+eur-DE: http://kde.alpha.mirror.ga
+eur-DE: http://kde.beta.mirror.ga
 eur-DE: http://master.kde.org
 eur-DE: http://mirror.netcologne.de/kde
 eur-DE: http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/kde
@@ -80,4 +84,3 @@ nam-US: http://mirrors.mit.edu/kde
 sam-BR: ftp://kde.c3sl.ufpr.br/kde
 sam-BR: http://kde.c3sl.ufpr.br
 sam-BR: http://linorg.usp.br/kde/downloads
-sam-BR: http://mirror.nbtelecom.com.br/KDE/kdeftp

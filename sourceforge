@@ -1,5 +1,5 @@
 # Official mirror list: http://sourceforge.net/p/forge/documentation/Mirrors/
-Timestamp: 2014-11-14
+Timestamp: 2015-02-06
 
 Primary: http://downloads.sourceforge.net
 
@@ -29,8 +29,10 @@ eur-UK: http://vorboss.dl.sourceforge.net/sourceforge
 nam-CA: http://iweb.dl.sourceforge.net/sourceforge
 nam-US: http://colocrossing.dl.sourceforge.net/sourceforge
 nam-US: http://downloads.sourceforge.net
+nam-US: http://hivelocity.dl.sourceforge.net/sourceforge
 nam-US: http://softlayer-ams.dl.sourceforge.net/sourceforge
 nam-US: http://softlayer-dal.dl.sourceforge.net/sourceforge
 nam-US: http://superb-dca2.dl.sourceforge.net/sourceforge
+nam-US: http://superb-dca3.dl.sourceforge.net/sourceforge
 nam-US: http://tcpdiag.dl.sourceforge.net/sourceforge
 sam-BR: http://ufpr.dl.sourceforge.net/sourceforge

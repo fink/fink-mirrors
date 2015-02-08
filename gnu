@@ -1,5 +1,5 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2014-11-13
+Timestamp: 2015-02-06
 
 Primary: http://ftpmirror.gnu.org
 
@@ -7,6 +7,7 @@ afr-NA: http://download.polytechnic.edu.na/pub/ftp.gnu.org/gnu
 afr-ZA: ftp://ftp.is.co.za/mirror/ftp.gnu.org/gnu
 afr-ZA: http://gnu.afri.cc
 afr-ZA: http://mirror.is.co.za/mirror/ftp.gnu.org/gnu
+asi-BD: ftp://mirrors.ispros.com.bd/gnu
 asi-BD: http://mirrors.ispros.com.bd/gnu
 asi-CN: ftp://mirrors.ustc.edu.cn/gnu
 asi-CN: http://mirror.bjtu.edu.cn/gnu
@@ -15,13 +16,13 @@ asi-CN: http://mirrors.ustc.edu.cn/gnu
 asi-IN: ftp://infinity.kmeacollege.ac.in/gnu
 asi-IN: http://gnumirror.nkn.in
 asi-IN: http://infinity.kmeacollege.ac.in/gnu
+asi-IR: http://gnu.aasaam.ir
 asi-JP: ftp://mirror.jre655.com/GNU
 asi-JP: http://ftp.jaist.ac.jp/pub/GNU
 asi-JP: http://mirror.jre655.com/GNU
 asi-JP: http://public.p-knowledge.co.jp/gnu-mirror/gnu
 asi-KR: http://ftp.kaist.ac.kr/gnu/gnu
 asi-MY: http://ossm.utm.my/gnu
-asi-OM: http://mirror.squ.edu.om/gnu
 asi-TW: ftp://ftp.twaren.net/Unix/GNU/gnu
 asi-TW: ftp://ftp.yzu.edu.tw/gnu
 asi-TW: http://ftp.yzu.edu.tw/gnu
@@ -50,6 +51,7 @@ eur-DE: http://ftp.hawo.stw.uni-erlangen.de/gnu
 eur-DE: http://ftp.hosteurope.de/mirror/ftp.gnu.org/gnu
 eur-DE: http://ftp.u-tx.net/gnu
 eur-DE: http://gnu.cardse.net
+eur-DE: http://mirror.bibleonline.ru/gnu
 eur-DE: http://mirror.checkdomain.de/gnu
 eur-DE: http://mirror.netcologne.de/gnu
 eur-DE: http://mirror3.layerjet.com/gnu
@@ -94,9 +96,7 @@ eur-PL: ftp://ftp.task.gda.pl/pub/gnu
 eur-PL: ftp://sunsite.icm.edu.pl/pub/gnu
 eur-PL: http://ftp.task.gda.pl/pub/gnu
 eur-PT: ftp://mirrors.fe.up.pt/pub/gnu
-eur-PT: ftp://mirrors.nfsi.pt/pub/gnu
 eur-PT: http://mirrors.fe.up.pt/pub/gnu
-eur-PT: http://mirrors.nfsi.pt/gnu
 eur-RO: ftp://gnu.mirrors.linux.ro/gnu
 eur-RO: http://gnu.mirrors.linux.ro
 eur-RS: ftp://mirror.sbb.rs/gnu
@@ -120,9 +120,7 @@ nam-CA: ftp://mirror.vexxhost.com/gnu
 nam-CA: http://gnu.mirror.iweb.com
 nam-CA: http://gnu.mirror.vexxhost.com
 nam-US: ftp://aeneas.mit.edu/pub/gnu
-nam-US: ftp://gnu.mirrorcatalogs.com/gnu
 nam-US: ftp://gnu.mirrors.pair.com/gnu/gnu
-nam-US: ftp://mirror.anl.gov/pub/gnu
 nam-US: ftp://mirror.keystealth.org/gnu
 nam-US: ftp://mirror.team-cymru.org/gnu
 nam-US: ftp://mirrors.kernel.org/gnu
@@ -138,7 +136,6 @@ nam-US: http://gnu.mirror.constant.com
 nam-US: http://gnu.mirrorcatalogs.com
 nam-US: http://gnu.mirrors.hoobly.com/gnu
 nam-US: http://gnu.mirrors.pair.com/gnu
-nam-US: http://mirror.anl.gov/pub/gnu
 nam-US: http://mirror.clarkson.edu/gnu
 nam-US: http://mirror.easthsia.com/gnu
 nam-US: http://mirror.keystealth.org/gnu

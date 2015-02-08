@@ -1,3 +1,17 @@
+0.38.3.1
+
+	* Refreshed mirrors via ‘get-mirrors.pl’.
+	* freebsd remains unchanged with 3 old-style mirrors remaining.
+
+0.38.2.1
+	
+	* Refreshed apache, cpan, ctan, freebsd, gnome, gnu, kde, and sourceforge
+	  mirrors via 'get-mirrors.pl'.
+	* debian and gimp mirror lists remain unchanged
+	* removed *sjc.ca.us* from active mirror list, hopefully just for the time being.
+
+----switch from ChangeLog to NEWS format
+
 2014-10-29	Alexander Hansen  <alexkhansen@users.sourceforge.net>
 
 	* Updated GNOME mirror source and parser for get-mirrors.pl
