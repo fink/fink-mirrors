@@ -10,6 +10,7 @@
 #  * html-tree-pm*
 #  * geo-ip-pm*
 # You have to choose those variants appropriate for the Perl version on your system.
+#  * geoip
 #
 # Then, invoke this script as
 #   ./get-mirrors.pl
