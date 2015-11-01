@@ -1,3 +1,9 @@
+0.39.1.1
+
+	* Refreshed mirrors via 'get-mirrors.pl'.
+	* Some apache mirrors now have "themis" by their timestamps in zzz/time.txt
+	  so update get-mirrors.pl to reflect that.
+
 0.38.6.1
 
 	* Refreshed mirrors via ‘get-mirrors.pl'.
