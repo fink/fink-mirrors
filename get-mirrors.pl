@@ -209,7 +209,7 @@ sub parse_apache {
 				my $url = $link->attr('href');
 				$url =~ s#/$##;
 				print "\t", $url, ": ";
-				if (get_content($url . '/zzz/time.txt') =~ /^\d+\s.*apache\.org$/gs) {
+				if (get_content($url . '/zzz/time.txt') =~ /^\d+\s(.*apache\.org|themis)$/gs) {
 					print "ok\n";
 					push(@$links, $url);
 				} else {
