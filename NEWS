@@ -1,3 +1,9 @@
+0.39.2.1
+
+	* Refreshed mirrors via 'get-mirrors.pl'.
+	* Added Algeria and Qatar to _keys
+	* Remove aah.de.* by request along with other known inactive apt/master/rsync mirrors
+
 0.39.1.1
 
 	* Refreshed mirrors via 'get-mirrors.pl'.
