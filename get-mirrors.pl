@@ -327,12 +327,11 @@ sub parse_freebsd {
 sub parse_gimp {
 	my $response = shift;
 	my $links = shift;
-
 	my $tree = HTML::TreeBuilder->new();
 	$tree->parse($response->decoded_content);
 	my $dl = $tree->look_down(
 		'_tag' => 'dl',
-		sub { $_[0]->attr('class') eq "download-mirror" },
+		sub { $_[0]->attr('class') eq "download-mirrors" },
 	);
 	if ($dl) {
 		GIMPLINKS: for my $link ($dl->look_down('_tag' => 'a')) {
