@@ -74,7 +74,7 @@ my %mirror_sites = (
 	'Debian'      => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
 	# 4 July 2014:  most FreeBSD mirrors have a stub README mentioning that operations have moved to distcache.FreeBSD.org.  Some haven't done that yet, though, so we'll keep the option to scan for mirrors until they all change over.
 	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'http://distcache.FreeBSD.org/ports-distfiles/' ],
-	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'ftp://ftp.gimp.org/pub/gimp' ],
+	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'http://download.gimp.org/mirror/pub/gimp' ],
 	'GNOME'       => [ \&parse_gnome, 'https://download.gnome.org/WELCOME.msg.mirrorlist', 'http://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'http://ftpmirror.gnu.org' ],
 	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
