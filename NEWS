@@ -1,3 +1,8 @@
+0.39.3.1
+
+	* Refreshed mirrors via 'get-mirrors.pl'.
+	* Updated get-mirrors.pl to reflect new class name for downloads on the GIMP mirror page.
+
 0.39.2.1
 
 	* Refreshed mirrors via 'get-mirrors.pl'.
