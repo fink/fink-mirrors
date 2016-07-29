@@ -1,5 +1,5 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2016-06-21
+Timestamp: 2016-07-29
 
 Primary: http://ftpmirror.gnu.org
 
@@ -55,7 +55,6 @@ eur-DE: http://www.gutscheinrausch.de/mirror/gnu
 eur-DK: http://ftp.download-by.net/gnu/gnu
 eur-ES: ftp://ftp.rediris.es/mirror/GNU/gnu
 eur-ES: http://ftp.rediris.es/mirror/GNU/gnu
-eur-FI: ftp://ftp.funet.fi/pub/gnu/prep
 eur-FI: http://www.nic.funet.fi/pub/gnu/ftp.gnu.org/pub/gnu
 eur-FR: ftp://fr.mirror.babylon.network/gnu
 eur-FR: ftp://ftp.igh.cnrs.fr/pub/gnu
@@ -102,7 +101,9 @@ eur-UA: http://ftp-gnu-org.ip-connect.vn.ua
 eur-UA: http://ftp.gnu.org.ua/gnu
 eur-UK: ftp://www.mirrorservice.org/sites/ftp.gnu.org/gnu
 eur-UK: http://www.mirrorservice.org/sites/ftp.gnu.org/gnu
+nam-CA: ftp://gnu.mirror.iweb.com
 nam-CA: ftp://mirror.vexxhost.com/gnu
+nam-CA: http://gnu.mirror.iweb.com
 nam-CA: http://gnu.mirror.vexxhost.com
 nam-US: ftp://mirror.keystealth.org/gnu
 nam-US: ftp://mirror.team-cymru.org/gnu
@@ -134,5 +135,6 @@ nam-US: http://www.dvlnx.com/software/gnu
 nam-US: http://www.localmsp.org/gnu
 sam-BR: ftp://ftp.unicamp.br/pub/gnu
 sam-BR: http://gnu.c3sl.ufpr.br/ftp
+sam-BR: http://mirror.nbtelecom.com.br/gnu
 sam-EC: ftp://mirror.cedia.org.ec/gnu
 sam-EC: http://mirror.cedia.org.ec/gnu

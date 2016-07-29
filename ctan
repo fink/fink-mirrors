@@ -1,5 +1,5 @@
 # Official mirror list: ftp://tug.ctan.org/tex-archive/README.mirrors
-Timestamp: 2016-06-21
+Timestamp: 2016-07-29
 
 Primary: ftp://tug.ctan.org/tex-archive
 
@@ -68,10 +68,7 @@ eur-DE: http://ftp.rrze.uni-erlangen.de/ctan
 eur-DE: http://mirror.physik-pool.tu-berlin.de/tex-archive
 eur-DE: http://mirror.reismil.ch/CTAN
 eur-DE: http://sunsite.informatik.rwth-aachen.de/ftp/pub/mirror/ctan
-eur-DK: ftp://mirrors.dotsrc.org/ctan
-eur-DK: http://mirrors.dotsrc.org/ctan
 eur-ES: http://osl.ugr.es/CTAN
-eur-FI: ftp://ftp.funet.fi/pub/TeX/CTAN
 eur-FR: ftp://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan
 eur-FR: ftp://ftp.oleane.net/pub/CTAN
 eur-FR: ftp://mirrors.ircam.fr/pub/CTAN
@@ -98,6 +95,7 @@ eur-PL: http://piotrkosoft.net/pub/mirrors/CTAN
 eur-PT: ftp://ftp.di.uminho.pt/pub/ctan
 eur-PT: ftp://ftp.eq.uc.pt/pub/software/TeX
 eur-PT: ftp://ftp.ist.utl.pt/pub/ctan
+eur-PT: ftp://mirrors.fe.up.pt/pub/CTAN
 eur-PT: http://ftp.eq.uc.pt/software/TeX
 eur-PT: http://mirrors.fe.up.pt/pub/CTAN
 eur-RS: http://ctan.mirror.ftn.uns.ac.rs
@@ -112,10 +110,12 @@ eur-UK: http://anorien.csc.warwick.ac.uk/mirrors/CTAN
 eur-UK: http://mirror.ox.ac.uk/sites/ctan.org
 nam-CA: ftp://ctan.math.ca/tex-archive
 nam-CA: ftp://ctan.mirror.rafal.ca/pub/CTAN
+nam-CA: ftp://ftp.muug.ca/mirror/ctan
 nam-CA: ftp://mirror.its.dal.ca/ctan
 nam-CA: http://ctan.math.ca/tex-archive
 nam-CA: http://ctan.mirror.rafal.ca
 nam-CA: http://mirror.its.dal.ca/ctan
+nam-CA: http://muug.ca/mirror/ctan
 nam-US: ftp://ctan.math.utah.edu/tex-archive
 nam-US: ftp://get-software.net/ctan
 nam-US: ftp://mirror.jmu.edu/pub/CTAN

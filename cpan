@@ -1,10 +1,10 @@
 # Official mirror list: http://www.cpan.org/SITES.html
-Timestamp: 2016-06-21
+Timestamp: 2016-07-29
 
 Primary: ftp://ftp.cpan.org/pub/CPAN
 
-afr-KE: ftp://mirror.zol.co.zw/CPAN
-afr-KE: http://mirror.zol.co.zw/CPAN
+afr-KE: ftp://mirror.liquidtelecom.com/CPAN
+afr-KE: http://mirror.liquidtelecom.com/CPAN
 afr-UG: http://mirror.ucu.ac.ug/cpan
 afr-ZA: ftp://cpan.mirror.ac.za
 afr-ZA: ftp://ftp.is.co.za/pub/cpan
@@ -40,7 +40,6 @@ asi-IR: http://mirror.yazd.ac.ir/cpan
 asi-JP: ftp://ftp.jaist.ac.jp/pub/CPAN
 asi-JP: ftp://ftp.nara.wide.ad.jp/pub/CPAN
 asi-JP: ftp://ftp.riken.jp/lang/CPAN
-asi-JP: ftp://ftp.u-aizu.ac.jp/pub/CPAN
 asi-JP: ftp://ftp.yz.yamagata-u.ac.jp/pub/lang/cpan
 asi-JP: ftp://mirror.jre655.com/CPAN
 asi-JP: http://ftp.jaist.ac.jp/pub/CPAN
@@ -211,10 +210,10 @@ eur-NL: ftp://download.xs4all.nl/pub/mirror/CPAN
 eur-NL: ftp://ftp.cs.uu.nl/pub/CPAN
 eur-NL: ftp://ftp.nluug.nl/pub/languages/perl/CPAN
 eur-NL: ftp://ftp.tudelft.nl/pub/CPAN
-eur-NL: ftp://mirror.nl.leaseweb.net/CPAN
 eur-NL: ftp://mirror.transip.net/CPAN
 eur-NL: http://cpan.cs.uu.nl
 eur-NL: http://cpan.mirror.triple-it.nl
+eur-NL: http://download.xs4all.nl/CPAN
 eur-NL: http://ftp.nluug.nl/languages/perl/CPAN
 eur-NL: http://ftp.tudelft.nl/cpan
 eur-NL: http://mirror.nl.leaseweb.net/CPAN
@@ -247,12 +246,14 @@ eur-RS: http://mirror.sbb.rs/CPAN
 eur-RU: ftp://cpan.rinet.ru/pub/mirror/CPAN
 eur-RU: ftp://cpan.webdesk.ru/cpan
 eur-RU: ftp://ftp.aha.ru/CPAN
+eur-RU: ftp://mirror.rydlab.ru/CPAN
 eur-RU: ftp://mirror.yandex.ru/mirrors/cpan
 eur-RU: http://cpan-mirror.rbc.ru/pub/CPAN
 eur-RU: http://cpan.rinet.ru
 eur-RU: http://cpan.uni-altai.ru
 eur-RU: http://cpan.webdesk.ru
 eur-RU: http://mirror.rol.ru/CPAN
+eur-RU: http://mirror.rydlab.ru/CPAN
 eur-RU: http://mirror.yandex.ru/mirrors/cpan
 eur-SE: ftp://ftp.acc.umu.se/mirror/CPAN
 eur-SE: http://ftp.acc.umu.se/mirror/CPAN
@@ -327,6 +328,18 @@ nam-US: http://cpan.cse.msu.edu
 nam-US: http://cpan.develooper.com
 nam-US: http://cpan.erlbaum.net
 nam-US: http://cpan.llarian.net
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
+nam-US: http://cpan.metacpan.org
 nam-US: http://cpan.mirror.clemson.edu
 nam-US: http://cpan.mirror.nac.net
 nam-US: http://cpan.mirrors.hoobly.com
@@ -351,11 +364,11 @@ nam-US: http://mirror.n5tech.com/CPAN
 nam-US: http://mirror.nyi.net/CPAN
 nam-US: http://mirror.team-cymru.org/CPAN
 nam-US: http://mirror.teklinks.com/CPAN
+nam-US: http://mirror.uic.edu/CPAN
 nam-US: http://mirror.uoregon.edu/CPAN
 nam-US: http://mirror.us.leaseweb.net/CPAN
 nam-US: http://mirror.uta.edu/CPAN
 nam-US: http://mirrors-usa.go-parts.com/cpan
-nam-US: http://mirrors.ccs.neu.edu/CPAN
 nam-US: http://mirrors.concertpass.com/cpan
 nam-US: http://mirrors.ibiblio.org/CPAN
 nam-US: http://mirrors.namecheap.com/CPAN
