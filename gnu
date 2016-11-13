@@ -1,13 +1,11 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2016-08-13
+Timestamp: 2016-11-12
 
 Primary: http://ftpmirror.gnu.org
 
 afr-NA: http://download.polytechnic.edu.na/pub/ftp.gnu.org/gnu
 afr-ZA: ftp://ftp.is.co.za/mirror/ftp.gnu.org/gnu
 afr-ZA: http://mirror.is.co.za/mirror/ftp.gnu.org/gnu
-asi-CN: ftp://mirrors.ustc.edu.cn/gnu
-asi-CN: http://mirror.hust.edu.cn/gnu
 asi-CN: http://mirrors.ustc.edu.cn/gnu
 asi-IN: ftp://infinity.kmeacollege.ac.in/gnu
 asi-IN: http://gnumirror.nkn.in
@@ -22,6 +20,8 @@ asi-TW: ftp://ftp.yzu.edu.tw/gnu
 asi-TW: http://ftp.yzu.edu.tw/gnu
 aus-AU: http://gnu.uberglobalmirror.com
 aus-AU: http://mirror.aarnet.edu.au/pub/gnu
+aus-NC: ftp://mirror.lagoon.nc/pub/gnu
+aus-NC: http://mirror.lagoon.nc/pub/gnu
 eur-AT: ftp://gd.tuwien.ac.at/gnu/gnusrc
 eur-AT: ftp://mirror.easyname.at/gnu
 eur-AT: ftp://mirror.inode.at/gnu
@@ -38,7 +38,6 @@ eur-DE: ftp://ftp.u-tx.net/gnu
 eur-DE: ftp://mirror.checkdomain.de/gnu
 eur-DE: ftp://mirror.netcologne.de/gnu
 eur-DE: ftp://mirror2.klaus-uwe.me/gnu
-eur-DE: ftp://www.artfiles.org/gnu.org
 eur-DE: http://ftp.halifax.rwth-aachen.de/gnu
 eur-DE: http://ftp.hawo.stw.uni-erlangen.de/gnu
 eur-DE: http://ftp.hosteurope.de/mirror/ftp.gnu.org/gnu
@@ -48,8 +47,13 @@ eur-DE: http://mirror.checkdomain.de/gnu
 eur-DE: http://mirror.netcologne.de/gnu
 eur-DE: http://mirror.reismil.ch/gnu
 eur-DE: http://mirror2.klaus-uwe.me/gnu
+eur-DE: http://mirrors.cicku.me/gnu
 eur-DE: http://www.artfiles.org/gnu.org
 eur-DE: http://www.gutscheinrausch.de/mirror/gnu
+eur-DE: http://www.singleboersen.com/mirror/gnu
+eur-DK: ftp://mirrors.dotsrc.org/gnu
+eur-DK: http://ftp.download-by.net/gnu/gnu
+eur-DK: http://mirrors.dotsrc.org/gnu
 eur-ES: ftp://ftp.rediris.es/mirror/GNU/gnu
 eur-ES: http://ftp.rediris.es/mirror/GNU/gnu
 eur-FI: ftp://ftp.funet.fi/pub/gnu/prep
@@ -65,14 +69,12 @@ eur-GR: http://ftp.cc.uoc.gr/mirrors/gnu
 eur-IE: ftp://ftp.heanet.ie/pub/gnu
 eur-IE: http://ftp.heanet.ie/mirrors/gnu
 eur-IT: http://mirror2.mirror.garr.it/mirrors/gnuftp/gnu
-eur-IT: http://mirrors.muzzy.it/gnu
 eur-NL: ftp://ftp.nluug.nl/pub/gnu
 eur-NL: ftp://ftp.snt.utwente.nl/pub/software/gnu
 eur-NL: ftp://nl.mirror.babylon.network/gnu
 eur-NL: http://ftp.snt.utwente.nl/pub/software/gnu
 eur-NL: http://gnu.xl-mirror.nl
 eur-NL: http://nl.mirror.babylon.network/gnu
-eur-NO: ftp://ftp.uninett.no/pub/gnu
 eur-NO: ftp://gnuftp.uib.no/pub/gnuftp
 eur-NO: http://gnuftp.uib.no
 eur-PL: ftp://ftp.task.gda.pl/pub/gnu
@@ -84,8 +86,6 @@ eur-PT: http://ftp.eq.uc.pt/software/unix/gnu
 eur-PT: http://mirrors.fe.up.pt/pub/gnu
 eur-RO: ftp://gnu.mirrors.linux.ro/gnu
 eur-RO: http://gnu.mirrors.linux.ro
-eur-RS: ftp://mirror.sbb.rs/gnu
-eur-RS: http://mirror.sbb.rs/gnu
 eur-RU: ftp://mirror.tochlab.net/pub/gnu
 eur-RU: http://mirror.tochlab.net/pub/gnu
 eur-SE: http://ftp.acc.umu.se/mirror/gnu.org/gnu
@@ -101,13 +101,17 @@ eur-UK: ftp://www.mirrorservice.org/sites/ftp.gnu.org/gnu
 eur-UK: http://www.mirrorservice.org/sites/ftp.gnu.org/gnu
 nam-CA: ftp://gnu.mirror.iweb.com
 nam-CA: http://gnu.mirror.iweb.com
+nam-US: ftp://ca.mirror.babylon.network/gnu
+nam-US: ftp://mirror.frgl.pw/gnu
 nam-US: ftp://mirror.keystealth.org/gnu
 nam-US: ftp://mirror.team-cymru.org/gnu
 nam-US: ftp://mirrors.kernel.org/gnu
 nam-US: ftp://mirrors.ocf.berkeley.edu/gnu
+nam-US: ftp://mirrors.syringanetworks.net/gnu
 nam-US: ftp://open-source-box.org/gnu
 nam-US: ftp://reflection.oss.ou.edu/gnu/gnu
 nam-US: ftp://spinellicreations.com/gnu
+nam-US: http://ca.mirror.babylon.network/gnu
 nam-US: http://ftp.wayne.edu/gnu
 nam-US: http://ftpmirror.gnu.org
 nam-US: http://gnu.askapache.com
@@ -116,6 +120,7 @@ nam-US: http://gnu.mirrors.hoobly.com/gnu
 nam-US: http://gnu.mirrors.pair.com/gnu
 nam-US: http://mirror.clarkson.edu/gnu
 nam-US: http://mirror.easthsia.com/gnu
+nam-US: http://mirror.frgl.pw/gnu
 nam-US: http://mirror.keystealth.org/gnu
 nam-US: http://mirror.nexcess.net/gnu
 nam-US: http://mirror.team-cymru.org/gnu
@@ -123,12 +128,13 @@ nam-US: http://mirror.thecodefactory.org/gnu
 nam-US: http://mirrors.ibiblio.org/pub/mirrors/gnu/ftp/gnu
 nam-US: http://mirrors.kernel.org/gnu
 nam-US: http://mirrors.ocf.berkeley.edu/gnu
+nam-US: http://mirrors.peers.community/mirrors/gnu
+nam-US: http://mirrors.syringanetworks.net/gnu
 nam-US: http://open-source-box.org
 nam-US: http://reflection.oss.ou.edu/gnu/gnu
 nam-US: http://www.dvlnx.com/software/gnu
 nam-US: http://www.localmsp.org/gnu
 sam-BR: ftp://ftp.unicamp.br/pub/gnu
-sam-BR: http://gnu.c3sl.ufpr.br/ftp
 sam-BR: http://mirror.nbtelecom.com.br/gnu
 sam-EC: ftp://mirror.cedia.org.ec/gnu
 sam-EC: http://mirror.cedia.org.ec/gnu
