@@ -9,6 +9,7 @@ Order: master rsync apt gnu gnome gimp ctan cpan debian freebsd kde sourceforge 
 master: Master Fink mirrors
 apt: Apt-Get Repository
 cpan: Comprehensive Perl Archive Network
+cran: Comprehensive R Archive Network
 ctan: Comprehensive TeX Archive Network
 debian: Debian
 freebsd: FreeBSD

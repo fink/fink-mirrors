@@ -45,7 +45,7 @@ foreach $file (qw(NEWS _keys _list)) {
 }
 
 my $packagefiles = "COPYING NEWS README README.contacts install.sh postinstall.pl.in " .
-    "_keys _list _urls anonymous-cvs apache apt cpan ctan cvs-repository debian developer-cvs freebsd gimp gnome gnu kde master postgresql rsync sourceforge website" ;
+    "_keys _list _urls anonymous-cvs apache apt cpan cran ctan cvs-repository debian developer-cvs freebsd gimp gnome gnu kde master postgresql rsync sourceforge website" ;
 
 my $info_script = "";
 
