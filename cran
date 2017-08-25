@@ -1,0 +1,6 @@
+# Cran has internal redirects to mirrors. We only want to point to primary and 
+# archive site.
+Timestamp: 2017-08-24
+
+Primary: https://cran.r-project.org/src/contrib
+Secondary: https://cran.r-project.org/src/contrib/Archive
