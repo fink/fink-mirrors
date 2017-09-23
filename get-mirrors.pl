@@ -77,7 +77,7 @@ my %mirror_sites = (
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'http://download.gimp.org/mirror/pub/gimp' ],
 	'GNOME'       => [ \&parse_gnome, 'https://download.gnome.org/WELCOME.msg.mirrorlist', 'http://ftp.gnome.org/pub/GNOME' ],
 	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'http://ftpmirror.gnu.org' ],
-	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/mirrors.html', 'http://download.kde.org/' ],
+	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/download-mirrors.html', 'http://download.kde.org/' ],
 	# PostgreSQL upstream no longer mentions the presence of any mirror sites.
 #	'PostgreSQL'  => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
 	'SourceForge' => [ \&parse_sourceforge, 'http://sourceforge.net/p/forge/documentation/Mirrors/','http://downloads.sourceforge.net'],
