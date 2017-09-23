@@ -1,3 +1,8 @@
+0.41.1.1
+	* Refreshed mirrors via 'get-mirrors.pl'
+	* Added Azerbaijan to _keys.
+	* Updated get-mirrors.pl to reflect new KDE base mirror site URL.
+
 0.41.0.1
 	* Refreshed mirrors via 'get-mirrors.pl'.	
 
