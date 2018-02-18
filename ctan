@@ -1,8 +1,10 @@
 # Official mirror list: ftp://tug.ctan.org/tex-archive/README.mirrors
-Timestamp: 2017-09-23
+Timestamp: 2018-02-18
 
 Primary: ftp://tug.ctan.org/tex-archive
 
+afr-DZ: ftp://ctan.epst-tlemcen.dz/pub/tex-archive
+afr-DZ: http://ctan.epst-tlemcen.dz/tex-archive
 afr-ZA: ftp://ftp.sun.ac.za/CTAN
 afr-ZA: ftp://mirror.ufs.ac.za/applications/ctan
 afr-ZA: http://ctan.mirror.ac.za
@@ -12,9 +14,6 @@ afr-ZA: http://mirror.ufs.ac.za/ctan
 asi-CN: ftp://mirrors.ustc.edu.cn/CTAN
 asi-CN: http://mirror.lzu.edu.cn/CTAN
 asi-CN: http://mirrors.cqu.edu.cn/CTAN
-asi-CN: http://mirrors.hustunique.com/ctan
-asi-CN: http://mirrors.opencas.cn/ctan
-asi-CN: http://mirrors.shuosc.org/CTAN
 asi-CN: http://mirrors.tuna.tsinghua.edu.cn/CTAN
 asi-CN: http://mirrors.ustc.edu.cn/CTAN
 asi-IN: http://ctan.imsc.res.in
@@ -24,11 +23,12 @@ asi-IR: http://repo.iut.ac.ir/tex-archive
 asi-JP: ftp://ftp.jaist.ac.jp/pub/CTAN
 asi-JP: ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN
 asi-JP: http://ftp.jaist.ac.jp/pub/CTAN
-asi-KR: ftp://ftp.kaist.ac.kr/tex-archive
+asi-JP: http://ftp.yz.yamagata-u.ac.jp/pub/CTAN
 asi-KR: ftp://ftp.neowiz.com/CTAN
 asi-KR: http://ftp.kaist.ac.kr/pub/tex-archive
 asi-KR: http://ftp.ktug.org/tex-archive
 asi-KR: http://ftp.neowiz.com/CTAN
+asi-KR: http://mirror.navercorp.com/CTAN
 asi-PH: ftp://mirror.pregi.net/tex-archive
 asi-PH: http://mirror.pregi.net/tex-archive
 asi-TH: ftp://mirror.kku.ac.th/CTAN
@@ -42,6 +42,7 @@ aus-NZ: ftp://mirror.aut.ac.nz/CTAN
 aus-NZ: http://mirror.aut.ac.nz/CTAN
 eur-AT: ftp://mirror.easyname.at/ctan
 eur-AT: http://mirror.easyname.at/ctan
+eur-AT: http://mirror.reismil.ch/CTAN
 eur-BY: ftp://mirror.datacenter.by/pub/mirrors/CTAN
 eur-BY: http://mirror.datacenter.by/pub/mirrors/CTAN
 eur-CH: ftp://mirror.switch.ch/mirror/tex
@@ -57,15 +58,13 @@ eur-DE: ftp://ftp.mpi-sb.mpg.de/pub/tex/mirror/ftp.dante.de/pub/tex
 eur-DE: ftp://ftp.rrze.uni-erlangen.de/ctan
 eur-DE: ftp://ftp.rrzn.uni-hannover.de/pub/mirror/tex-archive
 eur-DE: ftp://ftp.tu-chemnitz.de/pub/tex
-eur-DE: ftp://mirror.physik-pool.tu-berlin.de/tex-archive
 eur-DE: ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/ctan
-eur-DE: http://babyname.tips/mirrors/ctan
+eur-DE: http://ctan.127001.ovh
 eur-DE: http://ctan.space-pro.be/tex-archive
 eur-DE: http://ftp.fau.de/ctan
 eur-DE: http://ftp.fernuni-hagen.de/ftp-dir/pub/mirrors/www.ctan.org
 eur-DE: http://ftp.rrze.uni-erlangen.de/ctan
-eur-DE: http://mirror.physik-pool.tu-berlin.de/tex-archive
-eur-DE: http://mirror.reismil.ch/CTAN
+eur-DE: http://mirror.informatik.hs-fulda.de/tex-archive
 eur-DE: http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan
 eur-DK: ftp://mirrors.dotsrc.org/ctan
 eur-DK: http://mirrors.dotsrc.org/ctan
@@ -113,7 +112,6 @@ eur-UK: ftp://anorien.csc.warwick.ac.uk/CTAN
 eur-UK: ftp://mirror.ox.ac.uk/sites/ctan.org
 eur-UK: http://anorien.csc.warwick.ac.uk/mirrors/CTAN
 eur-UK: http://mirror.ox.ac.uk/sites/ctan.org
-nam-CA: ftp://ctan.math.ca/tex-archive
 nam-CA: ftp://ctan.mirror.rafal.ca/pub/CTAN
 nam-CA: ftp://ftp.muug.ca/mirror/ctan
 nam-CA: ftp://mirror.its.dal.ca/ctan
@@ -125,9 +123,11 @@ nam-CA: http://muug.ca/mirror/ctan
 nam-US: ftp://ctan.math.utah.edu/tex-archive
 nam-US: ftp://mirror.utexas.edu/pub/ctan
 nam-US: ftp://mirrors.rit.edu/CTAN
+nam-US: ftp://mirrors.sorengard.com/mirrors/ctan
 nam-US: ftp://tug.ctan.org/tex-archive
 nam-US: ftp://tug.ctan.org/tex-archive
 nam-US: http://ctan.forsale.plus
+nam-US: http://ctan.math.illinois.edu
 nam-US: http://ctan.math.utah.edu/ctan/tex-archive
 nam-US: http://ctan.math.washington.edu/tex-archive
 nam-US: http://ctan.mirrors.hoobly.com
@@ -138,12 +138,14 @@ nam-US: http://mirror.utexas.edu/ctan
 nam-US: http://mirrors.concertpass.com/tex-archive
 nam-US: http://mirrors.ibiblio.org/pub/mirrors/CTAN
 nam-US: http://mirrors.rit.edu/CTAN
+nam-US: http://mirrors.sorengard.com/ctan
 nam-US: http://tug.ctan.org/tex-archive
 nam-US: http://www.pirbot.com/mirrors/ctan
 sam-BR: ftp://linorg.usp.br/CTAN
 sam-BR: http://ctan.uniminuto.edu
 sam-BR: http://linorg.usp.br/CTAN
 sam-BR: http://repositorios.cpai.unb.br/ctan
+sam-BZ: http://mirror.koddos.net/CTAN
 sam-CL: ftp://ctan.dcc.uchile.cl/pub/lang/ctan/tex-archive
 sam-CL: ftp://ftp.inf.utfsm.cl/pub/tex-archive
 sam-CL: http://ftp.inf.utfsm.cl/pub/tex-archive
