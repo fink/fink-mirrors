@@ -1,5 +1,5 @@
 # Official mirror list: http://www.apache.org/mirrors/
-Timestamp: 2018-02-18
+Timestamp: 2018-04-04
 
 Primary: http://www.apache.org/dist
 
@@ -29,10 +29,11 @@ asi-PH: ftp://mirror.rise.ph/apache
 asi-PH: http://mirror.rise.ph/apache
 asi-TW: ftp://ftp.twaren.net/Unix/Web/apache
 asi-TW: http://apache.stu.edu.tw
-asi-TW: http://ftp.mirror.tw/pub/apache
 asi-TW: http://ftp.tc.edu.tw/pub/Apache
+asi-TW: http://ftp.twaren.net/Unix/Web/apache
 asi-VN: http://mirrors.viethosting.com/apache
 aus-AU: ftp://ftp.kddilabs.jp/infosystems/apache
+aus-AU: http://apache.melbourneitmirror.net
 aus-AU: http://apache.mirror.amaze.com.au
 aus-AU: http://apache.mirror.digitalpacific.com.au
 aus-AU: http://apache.mirror.serversaustralia.com.au
@@ -50,6 +51,7 @@ eur-BY: http://ftp.byfly.by/pub/apache.org
 eur-CH: ftp://mirror.switch.ch/mirror/apache/dist
 eur-CH: http://mirror.easyname.ch/apache
 eur-CH: http://mirror.switch.ch/mirror/apache/dist
+eur-CZ: ftp://mirror.hosting90.cz/apache
 eur-CZ: http://mirror.dkm.cz/apache
 eur-CZ: http://mirror.hosting90.cz/apache
 eur-DE: ftp://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.apache.org/dist
@@ -57,6 +59,7 @@ eur-DE: ftp://ftp.fau.de/apache
 eur-DE: ftp://ftp.fu-berlin.de/unix/www/apache
 eur-DE: ftp://ftp.halifax.rwth-aachen.de/apache
 eur-DE: ftp://mirror.netcologne.de/apache.org
+eur-DE: ftp://mirrors.nav.ro/apache
 eur-DE: http://apache.lauf-forum.at
 eur-DE: http://apache.mirror.digionline.de
 eur-DE: http://apache.mirror.iphh.net
@@ -64,7 +67,6 @@ eur-DE: http://artfiles.org/apache.org
 eur-DE: http://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.apache.org/dist
 eur-DE: http://ftp.fau.de/apache
 eur-DE: http://ftp.halifax.rwth-aachen.de/apache
-eur-DE: http://ftp.heikorichter.name/apache
 eur-DE: http://mirror.23media.de/apache
 eur-DE: http://mirror.dkd.de/apache
 eur-DE: http://mirror.funkfreundelandshut.de/apache
@@ -72,6 +74,7 @@ eur-DE: http://mirror.netcologne.de/apache.org
 eur-DE: http://mirror.softaculous.com/apache
 eur-DE: http://mirror.synyx.de/apache
 eur-DE: http://mirrors.ae-online.de/apache
+eur-DE: http://mirrors.nav.ro/apache
 eur-DE: http://www.gutscheine.org/mirror/apache
 eur-DK: http://apache.mirrors.ovh.net/ftp.apache.org/dist
 eur-DK: http://ftp.download-by.net/apache
@@ -116,8 +119,8 @@ eur-LT: ftp://apache.mirror.vu.lt/apache
 eur-LT: http://apache.mirror.serveriai.lt
 eur-LT: http://apache.mirror.vu.lt/apache
 eur-NL: ftp://apache.proserve.nl/apache
+eur-NL: ftp://mirror.yannic-bonenberger.com/apache
 eur-NL: ftp://mirror1.spango.com/apache
-eur-NL: http://apache.40b.nl
 eur-NL: http://apache.cs.uu.nl
 eur-NL: http://apache.hippo.nl
 eur-NL: http://apache.mirror.triple-it.nl
@@ -128,7 +131,7 @@ eur-NL: http://ftp.nluug.nl/internet/apache
 eur-NL: http://ftp.tudelft.nl/apache
 eur-NL: http://mirror.novg.net/apache
 eur-NL: http://mirror.yannic-bonenberger.com/apache
-eur-NL: http://mirrors.supportex.net/apache
+eur-NL: http://www.hjsnetworks.net/apache
 eur-NO: ftp://apache.uib.no/pub/apache
 eur-NO: http://apache.uib.no
 eur-PL: ftp://ftp.task.gda.pl/pub/www/apache/dist
@@ -149,12 +152,14 @@ eur-TR: http://ftp.itu.edu.tr/Mirror/Apache
 eur-UA: http://apache.cp.if.ua
 eur-UA: http://apache.ip-connect.vn.ua
 eur-UA: http://apache.volia.net
+eur-UA: http://ftp.heikorichter.name/apache
 eur-UK: ftp://ftp.mirrorservice.org/sites/ftp.apache.org
 eur-UK: http://apache.mindstudios.com
 eur-UK: http://apache.mirror.anlx.net
 eur-UK: http://apache.mirrors.nublue.co.uk
 eur-UK: http://mirror.ox.ac.uk/sites/rsync.apache.org
 eur-UK: http://mirror.vorboss.net/apache
+eur-UK: http://mirrors.supportex.net/apache
 eur-UK: http://mirrors.ukfast.co.uk/sites/ftp.apache.org
 eur-UK: http://www.mirrorservice.org/sites/ftp.apache.org
 nam-CA: ftp://apache.mirror.iweb.ca
@@ -212,7 +217,6 @@ nam-US: http://www.gtlib.gatech.edu/pub/apache
 nam-US: http://www.pirbot.com/mirrors/apache
 nam-US: http://www.trieuvan.com/apache
 sam-AR: http://apache.dattatec.com
-sam-AR: http://mirrors.dcarsat.com.ar/apache
 sam-BR: http://apache.uniminuto.edu
 sam-BR: http://ftp.unicamp.br/pub/apache
 sam-BR: http://mirror.nbtelecom.com.br/apache

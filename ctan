@@ -1,5 +1,5 @@
 # Official mirror list: ftp://tug.ctan.org/tex-archive/README.mirrors
-Timestamp: 2018-02-18
+Timestamp: 2018-04-04
 
 Primary: ftp://tug.ctan.org/tex-archive
 
@@ -11,20 +11,27 @@ afr-ZA: http://ctan.mirror.ac.za
 afr-ZA: http://ftp.leg.uct.ac.za/pub/packages/ctan
 afr-ZA: http://ftp.sun.ac.za/ftp/CTAN
 afr-ZA: http://mirror.ufs.ac.za/ctan
+asi-CN: ftp://mirrors.shu.edu.cn/CTAN
 asi-CN: ftp://mirrors.ustc.edu.cn/CTAN
 asi-CN: http://mirror.lzu.edu.cn/CTAN
 asi-CN: http://mirrors.cqu.edu.cn/CTAN
+asi-CN: http://mirrors.geekpie.club/CTAN
+asi-CN: http://mirrors.shu.edu.cn/CTAN
 asi-CN: http://mirrors.tuna.tsinghua.edu.cn/CTAN
 asi-CN: http://mirrors.ustc.edu.cn/CTAN
 asi-IN: http://ctan.imsc.res.in
 asi-IR: http://ctan.asis.io
+asi-IR: http://ctan.um.ac.ir
 asi-IR: http://ctan.yazd.ac.ir
 asi-IR: http://repo.iut.ac.ir/tex-archive
 asi-JP: ftp://ftp.jaist.ac.jp/pub/CTAN
 asi-JP: ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN
 asi-JP: http://ftp.jaist.ac.jp/pub/CTAN
 asi-JP: http://ftp.yz.yamagata-u.ac.jp/pub/CTAN
+asi-KR: ftp://ftp.harukasan.org/CTAN
+asi-KR: ftp://ftp.kaist.ac.kr/tex-archive
 asi-KR: ftp://ftp.neowiz.com/CTAN
+asi-KR: http://ftp.harukasan.org/CTAN
 asi-KR: http://ftp.kaist.ac.kr/pub/tex-archive
 asi-KR: http://ftp.ktug.org/tex-archive
 asi-KR: http://ftp.neowiz.com/CTAN
@@ -72,6 +79,7 @@ eur-ES: http://osl.ugr.es/CTAN
 eur-FI: ftp://ftp.funet.fi/pub/TeX/CTAN
 eur-FR: ftp://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan
 eur-FR: ftp://mirrors.ircam.fr/pub/CTAN
+eur-FR: http://ctan.crest.fr/tex-archive
 eur-FR: http://ctan.mines-albi.fr
 eur-FR: http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan
 eur-FR: http://mirror.ibcp.fr/pub/CTAN
@@ -100,6 +108,7 @@ eur-PT: ftp://ftp.ist.utl.pt/pub/ctan
 eur-PT: ftp://mirrors.up.pt/pub/CTAN
 eur-PT: http://ftp.eq.uc.pt/software/TeX
 eur-PT: http://mirrors.up.pt/pub/CTAN
+eur-RO: http://mirrors.nxthost.com/ctan
 eur-RS: http://ctan.mirror.ftn.uns.ac.rs
 eur-RU: ftp://mirror.macomnet.net/pub/CTAN
 eur-RU: ftp://mirrors.mi.ras.ru/CTAN

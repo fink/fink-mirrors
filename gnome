@@ -1,10 +1,9 @@
 # Official mirror list: https://download.gnome.org/WELCOME.msg.mirrorlist
-Timestamp: 2018-02-18
+Timestamp: 2018-04-04
 
 Primary: http://ftp.gnome.org/pub/GNOME
 
 afr-ZA: http://ftp.is.co.za/mirror/ftp.gnome.org
-asi-CN: https://mirrors.ustc.edu.cn/gnome
 asi-JP: http://ftp.nara.wide.ad.jp/pub/X11/GNOME
 eur-DE: http://artfiles.org/gnome.org
 eur-DE: https://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.gnome.org
