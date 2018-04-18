@@ -1,5 +1,5 @@
 # Official mirror list: http://www.gnu.org/prep/ftp.html
-Timestamp: 2018-04-04
+Timestamp: 2018-04-17
 
 Primary: http://ftpmirror.gnu.org
 
@@ -7,6 +7,7 @@ afr-NA: http://download.nust.na/pub/ftp.gnu.org/gnu
 afr-ZA: ftp://mirror.ufs.ac.za/applications/gnu
 afr-ZA: http://mirror.ufs.ac.za/gnu
 asi-CN: ftp://mirrors.ustc.edu.cn/gnu
+asi-CN: http://mirrors.ustc.edu.cn/gnu
 asi-IR: http://mirror.rasanegar.com/gnu
 asi-IR: http://mirror1.hostiran.ir/gnu/gnu
 asi-JP: ftp://mirror.jre655.com/GNU
@@ -41,10 +42,8 @@ eur-DE: http://mirrors.nav.ro/gnu
 eur-DE: http://www.artfiles.org/gnu.org
 eur-DE: http://www.gutscheinrausch.de/mirror/gnu
 eur-DE: http://www.singleboersen.com/mirror/gnu
-eur-DK: ftp://ftp.klid.dk/gnu
 eur-DK: ftp://mirrors.dotsrc.org/gnu
 eur-DK: http://ftp.download-by.net/gnu/gnu
-eur-DK: http://ftp.klid.dk/ftp/gnu
 eur-DK: http://mirrors.dotsrc.org/gnu
 eur-ES: ftp://ftp.rediris.es/mirror/GNU
 eur-ES: http://ftp.rediris.es/mirror/GNU
@@ -57,8 +56,6 @@ eur-GR: ftp://ftp.cc.uoc.gr/mirrors/gnu
 eur-GR: ftp://ftp.ntua.gr/pub/gnu
 eur-GR: http://ftp.cc.uoc.gr/mirrors/gnu
 eur-HU: http://mirror.infotronik.hu/mirrors/pub/gnu
-eur-IE: ftp://ftp.heanet.ie/pub/gnu
-eur-IE: http://ftp.heanet.ie/mirrors/gnu
 eur-IT: http://mirror2.mirror.garr.it/mirrors/gnuftp
 eur-NL: ftp://ftp.mirror.nl/pub/mirror/gnu
 eur-NL: ftp://ftp.nluug.nl/pub/gnu
@@ -74,6 +71,7 @@ eur-PL: http://ftp.task.gda.pl/pub/gnu
 eur-PT: ftp://ftp.eq.uc.pt/pub/software/unix/gnu
 eur-PT: ftp://mirrors.up.pt/pub/gnu
 eur-PT: http://ftp.eq.uc.pt/software/unix/gnu
+eur-PT: http://mirror.mileswilson.net/gnu
 eur-PT: http://mirrors.up.pt/pub/gnu
 eur-RS: ftp://mirror.sbb.rs/gnu
 eur-RS: http://mirror.sbb.rs/gnu

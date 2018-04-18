@@ -1,5 +1,5 @@
 # Official mirror list: http://www.apache.org/mirrors/
-Timestamp: 2018-04-04
+Timestamp: 2018-04-17
 
 Primary: http://www.apache.org/dist
 
@@ -8,6 +8,7 @@ afr-ZA: http://apache.saix.net
 afr-ZA: http://mirror.za.web4africa.net/apache
 asi-CN: http://mirror.bit.edu.cn/apache
 asi-CN: http://mirrors.hust.edu.cn/apache
+asi-CN: http://mirrors.shu.edu.cn/apache
 asi-CN: http://mirrors.tuna.tsinghua.edu.cn/apache
 asi-HK: http://apache.01link.hk
 asi-HK: http://apache.communilink.net
@@ -30,7 +31,6 @@ asi-PH: http://mirror.rise.ph/apache
 asi-TW: ftp://ftp.twaren.net/Unix/Web/apache
 asi-TW: http://apache.stu.edu.tw
 asi-TW: http://ftp.tc.edu.tw/pub/Apache
-asi-TW: http://ftp.twaren.net/Unix/Web/apache
 asi-VN: http://mirrors.viethosting.com/apache
 aus-AU: ftp://ftp.kddilabs.jp/infosystems/apache
 aus-AU: http://apache.melbourneitmirror.net
@@ -78,7 +78,6 @@ eur-DE: http://mirrors.nav.ro/apache
 eur-DE: http://www.gutscheine.org/mirror/apache
 eur-DK: http://apache.mirrors.ovh.net/ftp.apache.org/dist
 eur-DK: http://ftp.download-by.net/apache
-eur-DK: http://mirrors.dotsrc.org/apache
 eur-DK: http://mirrors.rackhosting.com/apache
 eur-ES: http://apache.rediris.es
 eur-ES: http://apache.uvigo.es
@@ -106,7 +105,6 @@ eur-HR: http://ftp.carnet.hr/misc/apache
 eur-HU: ftp://crysys.hit.bme.hu/pub/apache
 eur-HU: ftp://xenia.sote.hu/pub/mirrors/www.apache.org
 eur-HU: http://xenia.sote.hu/ftp/mirrors/www.apache.org
-eur-IE: http://ftp.heanet.ie/mirrors/www.apache.org/dist
 eur-IE: http://mirrors.whoishostingthis.com/apache
 eur-IL: http://apache.mivzakim.net
 eur-IL: http://apache.spd.co.il
@@ -121,6 +119,7 @@ eur-LT: http://apache.mirror.vu.lt/apache
 eur-NL: ftp://apache.proserve.nl/apache
 eur-NL: ftp://mirror.yannic-bonenberger.com/apache
 eur-NL: ftp://mirror1.spango.com/apache
+eur-NL: http://apache.40b.nl
 eur-NL: http://apache.cs.uu.nl
 eur-NL: http://apache.hippo.nl
 eur-NL: http://apache.mirror.triple-it.nl
@@ -164,14 +163,12 @@ eur-UK: http://mirrors.ukfast.co.uk/sites/ftp.apache.org
 eur-UK: http://www.mirrorservice.org/sites/ftp.apache.org
 nam-CA: ftp://apache.mirror.iweb.ca
 nam-CA: ftp://apache.mirror.rafal.ca/pub/apache
-nam-CA: ftp://mirror.csclub.uwaterloo.ca/apache
 nam-CA: http://apache.mirror.colo-serv.net
 nam-CA: http://apache.mirror.globo.tech
 nam-CA: http://apache.mirror.gtcomm.net
 nam-CA: http://apache.mirror.iweb.ca
 nam-CA: http://apache.mirror.rafal.ca
 nam-CA: http://apache.mirror.vexxhost.com
-nam-CA: http://apache.parentingamerica.com
 nam-CA: http://mirror.csclub.uwaterloo.ca/apache
 nam-CA: http://mirror.dsrg.utoronto.ca/apache
 nam-CA: http://mirror.its.dal.ca/apache
