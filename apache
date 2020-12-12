@@ -1,7 +1,7 @@
-# Official mirror list: http://www.apache.org/mirrors/
-Timestamp: 2018-04-17
+# Official mirror list: https://www.apache.org/mirrors/
+Timestamp: 2020-12-12
 
-Primary: http://www.apache.org/dist
+Primary: https://www.apache.org/dist
 
 afr-ZA: http://apache.is.co.za
 afr-ZA: http://apache.saix.net
@@ -220,3 +220,4 @@ sam-BR: http://mirror.nbtelecom.com.br/apache
 sam-BZ: http://mirror.koddos.net/apache
 sam-CR: ftp://mirrors.ucr.ac.cr/apache
 sam-CR: http://mirrors.ucr.ac.cr/apache
+nam-US: https://www.apache.org/dist
