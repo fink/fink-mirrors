@@ -262,7 +262,8 @@ sub parse_ctan {
 	for my $line (split(/\r?\n/, $response->decoded_content)) {
 		# Typical line:
 		#    URL: ftp://carroll.aset.psu.edu/pub/CTAN
-		if ($line =~ /^\s+URL: ((ftp|http):\S+)$/) {
+		# Only accept ftp/https/http links
+		if ($line =~ /^\s+URL: ((ftp|https|http):\S+)$/) {
 			my $url = $1;
 			print "\t", $url, ": ";
 			if (get_content($url . '/CTAN.sites')) {
