@@ -1,8 +1,8 @@
-The fink project has a unique buildsystem for its various releasable CVS
-modules (including fink, base-files, fix-fink, and fink-mirrors).
+The fink project has a unique buildsystem for its various releasable git
+repositories (including fink, base-files, fix-fink, and fink-mirrors).
 
 Within each such module there is a script "inject.pl" which can be used
-to install the current CVS version of the module into a working Fink
+to install the current git version of the module into a working Fink
 installation.
 
 Releases, on the other hand, are made using the scripts in scripts/srcdist.
