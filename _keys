@@ -9,23 +9,23 @@ afr-UG: Uganda
 afr-ZA: South Africa
 afr-ZW: Zimbabwe
 
-nam: North America
+nam: North America, Central America, and Caribbean
 nam-AG: Antigua and Barbuda
 nam-BS: Bahamas
+nam-BZ: Belize
 nam-CA: Canada
+nam-CR: Costa Rica
 nam-MX: Mexico
+nam-PR: Puerto Rico
+nam-SV: El Salvador
 nam-US: United States
 
-sam: South America, Middle America and Caribbean
+sam: South America
 sam-AR: Argentina
-sam-BZ: Belize
 sam-BR: Brazil
 sam-CL: Chile
 sam-CO: Colombia
-sam-CR: Costa Rica
 sam-EC: Ecuador
-sam-RQ: Puerto Rico
-sam-SV: El Salvador
 sam-UY: Uruguay
 sam-VE: Venezuela
 
