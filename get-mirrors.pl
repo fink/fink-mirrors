@@ -71,7 +71,7 @@ my %mirror_sites = (
 	'Apache'      => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
 	'CPAN'        => [ \&parse_cpan, 'https://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
 	'CTAN'        => [ \&parse_ctan, 'ftp://tug.ctan.org/tex-archive/README.mirrors', 'ftp://tug.ctan.org/tex-archive' ],
-	'Debian'      => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
+	'Debian'      => [ \&parse_debian, 'https://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
 	# 4 July 2014:  most FreeBSD mirrors have a stub README mentioning that ports/distfiles have moved to distcache.FreeBSD.org.  Some haven't done that yet, though, so we'll keep the option to scan for mirrors until they all change over.
 	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'http://distcache.FreeBSD.org/ports-distfiles/' ],
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'http://download.gimp.org/mirror/pub/gimp' ],
