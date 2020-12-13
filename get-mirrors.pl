@@ -69,7 +69,7 @@ use Getopt::Long;
 # map 'site name' to [ proc, URL of mirror list, primary mirror ]
 my %mirror_sites = (
 	'Apache'      => [ \&parse_apache, 'http://www.apache.org/mirrors/', 'http://www.apache.org/dist' ],
-	'CPAN'        => [ \&parse_cpan, 'http://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
+	'CPAN'        => [ \&parse_cpan, 'https://www.cpan.org/SITES.html', 'ftp://ftp.cpan.org/pub/CPAN' ],
 	'CTAN'        => [ \&parse_ctan, 'ftp://tug.ctan.org/tex-archive/README.mirrors', 'ftp://tug.ctan.org/tex-archive' ],
 	'Debian'      => [ \&parse_debian, 'http://www.debian.org/mirror/list', 'ftp://ftp.debian.org/debian' ],
 	# 4 July 2014:  most FreeBSD mirrors have a stub README mentioning that ports/distfiles have moved to distcache.FreeBSD.org.  Some haven't done that yet, though, so we'll keep the option to scan for mirrors until they all change over.
@@ -241,8 +241,8 @@ sub parse_cpan {
 
 			my $url = $link->attr('href');
 
-			# Only accept ftp/http links
-			next if ($url !~ m#^(ftp|http)://#);
+			# Only accept ftp/https/http links
+			next if ($url !~ m#^(ftp|https|http)://#);
 
 			# Sanity check: Link content must match href
 			my $content = join('',$link->content_list());
