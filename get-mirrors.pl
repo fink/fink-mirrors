@@ -76,7 +76,7 @@ my %mirror_sites = (
 	'FreeBSD'     => [ \&parse_freebsd, 'http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html', 'http://distcache.FreeBSD.org/ports-distfiles/' ],
 	'Gimp'        => [ \&parse_gimp, 'http://www.gimp.org/downloads', 'http://download.gimp.org/mirror/pub/gimp' ],
 	'GNOME'       => [ \&parse_gnome, 'https://download.gnome.org/WELCOME.msg.mirrorlist', 'http://ftp.gnome.org/pub/GNOME' ],
-	'GNU'         => [ \&parse_gnu, 'http://www.gnu.org/prep/ftp.html', 'http://ftpmirror.gnu.org' ],
+	'GNU'         => [ \&parse_gnu, 'https://www.gnu.org/prep/ftp.html', 'https://ftpmirror.gnu.org' ],
 	'KDE'         => [ \&parse_kde, 'http://files.kde.org/extra/download-mirrors.html', 'http://download.kde.org/' ],
 	# PostgreSQL upstream no longer mentions the presence of any mirror sites.
 #	'PostgreSQL'  => [ \&parse_postgresql, 'http://wwwmaster.postgresql.org/download/mirrors-ftp?file=%2F', 'ftp://ftp.postgresql.org/pub' ],
@@ -397,8 +397,8 @@ sub parse_gnu {
 		for my $link ($content->look_down('_tag' => 'a', sub { $_[0]->attr('rel') eq "nofollow" })) {
 			if ($link) {
 				my $url = $link->attr('href');
-				# Only accept ftp/http links
-				next if ($url !~ m#^(ftp|http)://#);
+				# Only accept ftp/https/http links
+				next if ($url !~ m#^(ftp|https|http)://#);
 
 				# Remove trailing slashes
 				$url =~ s#/+$##gs;
