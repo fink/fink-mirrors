@@ -2,6 +2,6 @@ Timestamp: 2016-02-12
 Primary: http://distfiles.master.finkmirrors.net/distfiles/
 
 asi-JP: http://distfiles.hnd.jp.asi.finkmirrors.net/
-eur-DE: http://distfiles.ber.de.eu.finkmirrors.net/
+# eur-DE: http://distfiles.ber.de.eu.finkmirrors.net/
 # eur-IE: http://distfiles.dub.ie.eu.finkmirrors.net/
 nam-CA: http://distfiles.yeg.ab.ca.finkmirrors.net/distfiles/
