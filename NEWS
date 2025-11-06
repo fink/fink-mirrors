@@ -1,3 +1,6 @@
+0.45.6.1
+	* Update some mirror lists via 'get-mirrors.pl'
+
 0.42.0.1
 	* Refreshed mirrors via 'get-mirrors.pl'
 	* Added Belize to _keys.
