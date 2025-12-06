@@ -18,7 +18,7 @@ mirror lists into your Fink installation. Just run it, in most
 cases it locates your tree on its own. If it doesn't, pass the path as
 a parameter, as in
 
-  ./inject.pl /sw
+  ./inject.pl /opt/sw
 
 The third way is basically the same, but instead of downloading a
 tarball, you use git to check out the 'fink-mirrors' repository to a

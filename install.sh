@@ -23,7 +23,7 @@
 
 if [ $# -ne 1 ]; then
   echo "Usage: ./install.sh <prefix>"
-  echo "  Example: ./install.sh /tmp/builddirectory/sw"
+  echo "  Example: ./install.sh /tmp/builddirectory/opt/sw"
   echo "WARNING: Don't call install.sh directly, use inject.pl instead."
   echo "         You have been warned."
   exit 1
